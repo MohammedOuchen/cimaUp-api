@@ -1,0 +1,10 @@
+[
+    {
+        "siteTitle":"monsuiviortho",
+        "defaultRole":["Client"],
+        "defaultTutor":["Tutor"],
+        "defaultClient":["Client"],
+        "membershipStripeId": "price_1KO0BZJZc3KRlsOPBey7imiI",
+        "premiumMembershipStripeId": "price_1KO0CBJZc3KRlsOPRwLWjoOY"
+    }
+]
