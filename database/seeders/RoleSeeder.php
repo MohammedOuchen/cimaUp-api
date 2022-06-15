@@ -25,7 +25,7 @@ class RoleSeeder extends Seeder
              foreach($data as $obj){
                  Role::create([
                      'name' => $obj->name,
-                     'guard_name' => 'cima-up'
+                     'guard_name' => 'web'
                  ]);
              }
          }

@@ -1,11 +1,11 @@
 [
     {
-        "name":"Super-Admin"
+        "name":"super-admin"
     },
     {
-        "name":"partner"
+        "name":"owner"
     },
     {
-        "name":"Client"
+        "name":"client"
     }
 ]

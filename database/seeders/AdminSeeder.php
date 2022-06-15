@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\Config;
 
 class AdminSeeder extends Seeder
 {
@@ -35,7 +36,7 @@ class AdminSeeder extends Seeder
                     'password' => isset($obj->password) ? Hash::make($obj->password) : Hash::make("Password-1234"),
                     'remember_token' => Str::random(10),
                     'email_verified_at' => now(),
-                ))->assignRole(Role::findOrCreate('Super-Admin'));
+                ))->assignRole(Role::findOrCreate(Config::get('role.super_admin')));
             }
         }
     }

@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
 
@@ -35,7 +36,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        resolve(\Illuminate\Routing\UrlGenerator::class)->forceScheme('https');
+        // resolve(\Illuminate\Routing\UrlGenerator::class)->forceScheme('https');
 
         parent::boot();
 
@@ -55,6 +56,10 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
         $this->mapAdminRoutes();
+
+        $this->mapAuthRoutes();
+
+        $this->mapPartnerRoutes();
     }
 
      /**
@@ -92,8 +97,24 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::prefix('admin')
             ->as('admin.')
-            ->middleware(['web'])
+            ->middleware(['web','auth'])
+            // ->middleware(['web','auth', 'role:'.Config::get('role.super_admin')])
             ->group(base_path('routes/web/admin.php'));
+    }
+
+    /**
+     * Define the "partner" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapPartnerRoutes()
+    {
+        Route::prefix('partner')
+            ->middleware(['web', 'auth', 'role:'.Config::get('role.group_owner')])
+            ->as('partner.')
+            ->group(base_path('routes/web/partner.php'));
     }
 
     /**
@@ -106,5 +127,18 @@ class RouteServiceProvider extends ServiceProvider
         RateLimiter::for('api', function (Request $request) {
             return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
         });
+    }
+
+    /**
+     * Define the "auth" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapAuthRoutes()
+    {
+        Route::middleware(['web', 'guest'])
+        ->group(base_path('routes/auth.php'));
     }
 }

@@ -69,7 +69,8 @@
 
         props: {
             canResetPassword: Boolean,
-            status: String
+            status: String,
+
         },
 
         data() {
@@ -77,7 +78,8 @@
                 form: this.$inertia.form({
                     email: '',
                     password: '',
-                    remember: false
+                    remember: false,
+                    route: route().current(),
                 })
             }
         },
