@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
+use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
@@ -14,9 +16,21 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Inertia::render('Admin/User/index');
+        $users = User::query()
+                ->with('roles')
+                ->when($request->has('roles') && Role::all()->contains('name', $request->roles), function ($user) use ($request){
+                    return $user->whereHas('roles', function($role) use ($request) {
+                        return $role->where('name', $request->roles);
+                    });;
+                })
+                ->orderBy('id', 'desc')
+                ->get();
+
+        return Inertia::render('Admin/User/index', [
+                'users' => $users
+        ]);
     }
 
     /**

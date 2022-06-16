@@ -11,4 +11,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('home', [DashboardController::class, 'index'])->name('home');
-Route::resource('/user', UserController::class)->only(['index']);
+Route::resource('/user', UserController::class);
