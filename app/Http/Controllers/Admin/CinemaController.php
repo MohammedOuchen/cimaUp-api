@@ -104,6 +104,9 @@ class CinemaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $cinema = Cinema::findorFail($id);
+        $cinema->delete();
+
+        return back();
     }
 }

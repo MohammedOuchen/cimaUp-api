@@ -100,18 +100,52 @@
                 </div>
 	        </main>
         </div>
+
+    <jet-dialog-modal :show="this.ConfirmDeletion" @close="this.ConfirmDeletion = false">
+        <template #title>
+           Supprimer un Cinema
+        </template>
+
+        <template #content>
+          Voulez-vous vraiment supprimer cet cinema? Une fois supprimé, toutes ses ressources et données seront définitivement supprimées.
+        </template>
+
+        <template #footer>
+            <jet-secondary-button @click="ConfirmDeletion = false">
+               Annuler
+            </jet-secondary-button>
+
+            <jet-danger-button class="ml-2" @click="deleteCinema" :class="{ 'opacity-25': '' }">
+                Supprimer
+            </jet-danger-button>
+        </template>
+    </jet-dialog-modal>
     </admin-layout>
 </template>
 <script>
+
 import AdminLayout from '@/Layouts/AdminLayout'
+import JetDialogModal from './../../../Jetstream/DialogModal'
+import JetDangerButton from './../../../Jetstream/DangerButton'
+import JetSecondaryButton from './../../../Jetstream/SecondaryButton'
+
 export default {
     components:{
-        AdminLayout
+        AdminLayout,
+        JetDialogModal,
+        JetSecondaryButton,
+        JetDangerButton
     },
     props:['cinemas'],
     data(){
         return {
-
+                ConfirmDeletion:false,
+                cinema_id: null,
+                delCinema: this.$inertia.form({
+                    '_method': 'DELETE',
+                },{
+                    bag: 'deleteUser'
+                })
         }
     },
     methods:{
@@ -119,8 +153,22 @@ export default {
             this.$inertia.visit(route('admin.cinema.create'))
         },
         Delete(data){
-
+           this.ConfirmDeletion = true
+           this.cinema_id = data.id;
            console.log(data.id);
+        },
+        deleteCinema(){
+                this.delCinema.post(route('admin.cinema.destroy', {id: this.cinema_id}), {
+                        preserveScroll: true,
+                        onError: (error) => {
+
+                        },
+                        onSuccess: () => {
+                            this.ConfirmDeletion = false
+                        //    this.ConfirmDeletion.reset();
+                           console.log(this.ConfirmDeletion);
+                        }
+                })
         }
     },
     mounted()
