@@ -15,7 +15,7 @@ class devEnvironment extends Command
      *
      * @var string
      */
-    protected $signature = 'dev {--Client=20}';
+    protected $signature = 'dev {--Client=20} {--Owner=20}';
 
     /**
      * The console command description.
@@ -105,9 +105,10 @@ class devEnvironment extends Command
 
         //command values
         $nbClient =  $this->option('Client');
+        $nbOwner = $this->option('Owner');
 
         //global users we will create
-        $globalNbToCreate = $nbClient;
+        $globalNbToCreate = $nbClient + $nbOwner;
 
         if($globalNbToCreate > 0){
             $this->info("\033[33m Starting creating ".$globalNbToCreate." users...");
@@ -139,6 +140,35 @@ class devEnvironment extends Command
                 $bar->finish();
                 $this->info("\n\033[97m --- ".$roleName."s created\xE2\x9C\x94");
             }
+
+            //Owner creation
+            if($nbOwner > 0){
+                $nbToCreate = $nbOwner;
+                $roleName = "owner";
+                $wantedRole =  Role::findOrCreate($roleName);
+
+                $this->info("\033[33m --- Creating ".$nbToCreate." ".$roleName."s :");
+                $bar = $this->output->createProgressBar($nbToCreate);
+                $bar->setFormat(' --- %bar% %percent:3s%% %current%/%max%');
+                $bar->setBarCharacter('<comment>█</comment>');
+                $bar->setEmptyBarCharacter(' ');
+                $bar->setProgressCharacter(' ');
+                $bar->start();
+
+                for ($i=0; $i < $nbToCreate; $i++) {
+                    /** @var User $user */
+                    $user = User::factory()
+                        ->create([
+                            'email' => Str::slug($roleName).'-'.($i+1).'@'.Str::slug($appName).'.com',
+                        ])
+                        ->assignRole($wantedRole);
+
+                    $bar->advance();
+                }
+                $bar->finish();
+                $this->info("\n\033[97m --- ".$roleName."s created\xE2\x9C\x94");
+            }
+
             $this->info("\033[32m All users are created \xE2\x9C\x94");
         }
         else{

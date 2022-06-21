@@ -21,16 +21,16 @@
                         <span>Accounts list</span>
                     </Link>
                 </li>
-             <!--   <li>
-                    <inertia-link :href="route('admin.users.index', {_query: {roles: 'Mangaka'}})" v-bind:class="[route().current('admin.users.index') && route().params['roles'] == 'Mangaka' ? 'bg-gray-200 text-gray-900' : '']" class="flex space-x-2 items-center text-gray-600 p-2 hover:bg-gray-200 rounded-lg hover:text-gray-900">
+              <li>
+                    <Link :href="route('admin.cinema.index')" v-bind:class="[route().current('admin.cinema.index') ? 'bg-gray-200 text-gray-900' : '']" class="flex space-x-2 items-center text-gray-600 p-2 hover:bg-gray-200 rounded-lg hover:text-gray-900">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-current" viewBox="0 0 64 64">
                             <path data-name="layer2" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="4" d="M9.7 54.3l-7.6 7.6m15.1-10.8a6.5 6.5 0 0 0-4.3-4.3 6 6 0 0 1-5.6.9l-.9.7-.5.7a6.4 6.4 0 0 0-1 1.9c-1.8 4.2-2.8 10.9-2.8 10.9s6.8-.9 11-2.7a6.5 6.5 0 0 0 1.7-1l.7-.6.7-.9a6 6 0 0 1 1-5.6z" stroke-linejoin="round" stroke-linecap="round"></path>
                             <path data-name="layer1" d="M61.1 6.9l-36 40.4a6 6 0 1 1-9-8l.5-.5L57 2.8a2.8 2.8 0 0 1 4 4z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></path>
                         </svg>
-                        <span>Mangakas list</span>
-                    </inertia-link>
+                        <span>Cinemas</span>
+                    </Link>
                 </li>
-                <li>
+                 <!--     <li>
                     <inertia-link :href="route('admin.users.index', {_query: {roles: 'Reader'}})" v-bind:class="[route().current('admin.users.index') && route().params['roles'] == 'Reader' ? 'bg-gray-200 text-gray-900' : '']" class="flex space-x-2 items-center text-gray-600 p-2 hover:bg-gray-200 rounded-lg hover:text-gray-900">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-current" viewBox="0 0 64 64">
                             <path data-name="layer2" d="M4.4 33.4L4 34S2.6 52 16 52s12-16 12-16m31.7-2.6l.4.6s1.4 18-12 18-12-16-12-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>

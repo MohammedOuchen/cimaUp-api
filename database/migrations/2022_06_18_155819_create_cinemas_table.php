@@ -15,7 +15,14 @@ class CreateCinemasTable extends Migration
     {
         Schema::create('cinemas', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 200);
+            $table->string('name');
+            $table->string('address')->nullable();
+            $table->string('additional_address')->nullable();
+            $table->string('post_code')->nullable();
+            $table->string('city')->nullable();
+            $table->string('country')->nullable();
+            $table->boolean('active');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
