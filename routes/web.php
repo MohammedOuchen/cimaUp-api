@@ -18,12 +18,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Client/HomePage', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+   return view('Client.homePage');
 });
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
