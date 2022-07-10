@@ -2,6 +2,11 @@
 <div id="main">
 <br>
 <br>
+<div align="center">
+<img src="images/cimaup.png"/>
+</div>
+<br>
+<br>
 <br>
 <br>
 <h1 class="demo-title">
@@ -110,17 +115,10 @@
   box-sizing: border-box;
 }
 
-#main{
-  
+.logo{
+  text-align:center;
 }
 
-#bg {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  min-width: 100%;
-  min-height: 100%;
-}
 
 h2{
   text-align: center;

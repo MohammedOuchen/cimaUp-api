@@ -1,28 +1,28 @@
 <template>
     <jet-form-section @submitted="updatePassword">
         <template #title>
-            Update Password
+            Mettez à jour le mot de passe
         </template>
 
         <template #description>
-            Ensure your account is using a long, random password to stay secure.
+            Assurez-vous que votre compte utilise un mot de passe long et aléatoire pour rester en sécurité.
         </template>
 
         <template #form>
             <div class="col-span-6 sm:col-span-4">
-                <jet-label for="current_password" value="Current Password" />
+                <jet-label for="current_password" value="Mot de passe actuel" />
                 <jet-input id="current_password" type="password" class="mt-1 block w-full" v-model="form.current_password" ref="current_password" autocomplete="current-password" />
                 <jet-input-error :message="form.errors.current_password" class="mt-2" />
             </div>
 
             <div class="col-span-6 sm:col-span-4">
-                <jet-label for="password" value="New Password" />
+                <jet-label for="password" value="Nouveau mot de passe" />
                 <jet-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" ref="password" autocomplete="new-password" />
                 <jet-input-error :message="form.errors.password" class="mt-2" />
             </div>
 
             <div class="col-span-6 sm:col-span-4">
-                <jet-label for="password_confirmation" value="Confirm Password" />
+                <jet-label for="password_confirmation" value="Confirmez votre mot de passe" />
                 <jet-input id="password_confirmation" type="password" class="mt-1 block w-full" v-model="form.password_confirmation" autocomplete="new-password" />
                 <jet-input-error :message="form.errors.password_confirmation" class="mt-2" />
             </div>
@@ -34,7 +34,7 @@
             </jet-action-message>
 
             <jet-button :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                Save
+                Enregister
             </jet-button>
         </template>
     </jet-form-section>

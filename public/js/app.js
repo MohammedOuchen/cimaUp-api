@@ -22108,13 +22108,13 @@ __webpack_require__.r(__webpack_exports__);
   emits: ['confirmed'],
   props: {
     title: {
-      "default": 'Confirm Password'
+      "default": 'Confirmez le mot de passe'
     },
     content: {
-      "default": 'For your security, please confirm your password to continue.'
+      "default": 'Pour votre sécurité, veuillez confirmer votre mot de passe pour continuer.'
     },
     button: {
-      "default": 'Confirm'
+      "default": 'Confirmer'
     }
   },
   components: {
@@ -25086,36 +25086,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = {
-  viewBox: "0 0 317 48",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg"
-};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  d: "M74.09 30.04V13h-4.14v21H82.1v-3.96h-8.01zM95.379 19v1.77c-1.08-1.35-2.7-2.19-4.89-2.19-3.99 0-7.29 3.45-7.29 7.92s3.3 7.92 7.29 7.92c2.19 0 3.81-.84 4.89-2.19V34h3.87V19h-3.87zm-4.17 11.73c-2.37 0-4.14-1.71-4.14-4.23 0-2.52 1.77-4.23 4.14-4.23 2.4 0 4.17 1.71 4.17 4.23 0 2.52-1.77 4.23-4.17 4.23zM106.628 21.58V19h-3.87v15h3.87v-7.17c0-3.15 2.55-4.05 4.56-3.81V18.7c-1.89 0-3.78.84-4.56 2.88zM124.295 19v1.77c-1.08-1.35-2.7-2.19-4.89-2.19-3.99 0-7.29 3.45-7.29 7.92s3.3 7.92 7.29 7.92c2.19 0 3.81-.84 4.89-2.19V34h3.87V19h-3.87zm-4.17 11.73c-2.37 0-4.14-1.71-4.14-4.23 0-2.52 1.77-4.23 4.14-4.23 2.4 0 4.17 1.71 4.17 4.23 0 2.52-1.77 4.23-4.17 4.23zM141.544 19l-3.66 10.5-3.63-10.5h-4.26l5.7 15h4.41l5.7-15h-4.26zM150.354 28.09h11.31c.09-.51.15-1.02.15-1.59 0-4.41-3.15-7.92-7.59-7.92-4.71 0-7.92 3.45-7.92 7.92s3.18 7.92 8.22 7.92c2.88 0 5.13-1.17 6.54-3.21l-3.12-1.8c-.66.87-1.86 1.5-3.36 1.5-2.04 0-3.69-.84-4.23-2.82zm-.06-3c.45-1.92 1.86-3.03 3.93-3.03 1.62 0 3.24.87 3.72 3.03h-7.65zM164.516 34h3.87V12.1h-3.87V34zM185.248 34.36c3.69 0 6.9-2.01 6.9-6.3V13h-2.1v15.06c0 3.03-2.07 4.26-4.8 4.26-2.19 0-3.93-.78-4.62-2.61l-1.77 1.05c1.05 2.43 3.57 3.6 6.39 3.6zM203.124 18.64c-4.65 0-7.83 3.45-7.83 7.86 0 4.53 3.24 7.86 7.98 7.86 3.03 0 5.34-1.41 6.6-3.45l-1.74-1.02c-.81 1.44-2.46 2.55-4.83 2.55-3.18 0-5.55-1.89-5.97-4.95h13.17c.03-.3.06-.63.06-.93 0-4.11-2.85-7.92-7.44-7.92zm0 1.92c2.58 0 4.98 1.71 5.4 5.01h-11.19c.39-2.94 2.64-5.01 5.79-5.01zM221.224 20.92V19h-4.32v-4.2l-1.98.6V19h-3.15v1.92h3.15v9.09c0 3.6 2.25 4.59 6.3 3.99v-1.74c-2.91.12-4.32.33-4.32-2.25v-9.09h4.32zM225.176 22.93c0-1.62 1.59-2.37 3.15-2.37 1.44 0 2.97.57 3.6 2.1l1.65-.96c-.87-1.86-2.79-3.06-5.25-3.06-3 0-5.13 1.89-5.13 4.29 0 5.52 8.76 3.39 8.76 7.11 0 1.77-1.68 2.4-3.45 2.4-2.01 0-3.57-.99-4.11-2.52l-1.68.99c.75 1.92 2.79 3.45 5.79 3.45 3.21 0 5.43-1.77 5.43-4.32 0-5.52-8.76-3.39-8.76-7.11zM244.603 20.92V19h-4.32v-4.2l-1.98.6V19h-3.15v1.92h3.15v9.09c0 3.6 2.25 4.59 6.3 3.99v-1.74c-2.91.12-4.32.33-4.32-2.25v-9.09h4.32zM249.883 21.49V19h-1.98v15h1.98v-8.34c0-3.72 2.34-4.98 4.74-4.98v-1.92c-1.92 0-3.69.63-4.74 2.73zM263.358 18.64c-4.65 0-7.83 3.45-7.83 7.86 0 4.53 3.24 7.86 7.98 7.86 3.03 0 5.34-1.41 6.6-3.45l-1.74-1.02c-.81 1.44-2.46 2.55-4.83 2.55-3.18 0-5.55-1.89-5.97-4.95h13.17c.03-.3.06-.63.06-.93 0-4.11-2.85-7.92-7.44-7.92zm0 1.92c2.58 0 4.98 1.71 5.4 5.01h-11.19c.39-2.94 2.64-5.01 5.79-5.01zM286.848 19v2.94c-1.26-2.01-3.39-3.3-6.06-3.3-4.23 0-7.74 3.42-7.74 7.86s3.51 7.86 7.74 7.86c2.67 0 4.8-1.29 6.06-3.3V34h1.98V19h-1.98zm-5.91 13.44c-3.33 0-5.91-2.61-5.91-5.94 0-3.33 2.58-5.94 5.91-5.94s5.91 2.61 5.91 5.94c0 3.33-2.58 5.94-5.91 5.94zM309.01 18.64c-1.92 0-3.75.87-4.86 2.73-.84-1.74-2.46-2.73-4.56-2.73-1.8 0-3.42.72-4.59 2.55V19h-1.98v15H295v-8.31c0-3.72 2.16-5.13 4.32-5.13 2.13 0 3.51 1.41 3.51 4.08V34h1.98v-8.31c0-3.72 1.86-5.13 4.17-5.13 2.13 0 3.66 1.41 3.66 4.08V34h1.98v-9.36c0-3.75-2.31-6-5.61-6z",
-  fill: "#000"
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "images/cimaup.png"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  d: "M11.395 44.428C4.557 40.198 0 32.632 0 24 0 10.745 10.745 0 24 0a23.891 23.891 0 0113.997 4.502c-.2 17.907-11.097 33.245-26.602 39.926z",
-  fill: "#6875F5"
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  d: "M14.134 45.885A23.914 23.914 0 0024 48c13.255 0 24-10.745 24-24 0-3.516-.756-6.856-2.115-9.866-4.659 15.143-16.608 27.092-31.75 31.751z",
-  fill: "#6875F5"
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_5 = [_hoisted_2, _hoisted_3, _hoisted_4];
+var _hoisted_2 = [_hoisted_1];
 function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_1, _hoisted_5);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, _hoisted_2);
 }
 
 /***/ }),
@@ -25133,29 +25113,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = {
-  viewBox: "0 0 48 48",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg"
-};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  d: "M11.395 44.428C4.557 40.198 0 32.632 0 24 0 10.745 10.745 0 24 0a23.891 23.891 0 0113.997 4.502c-.2 17.907-11.097 33.245-26.602 39.926z",
-  fill: "#6875F5"
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "images/cimaup.png"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  d: "M14.134 45.885A23.914 23.914 0 0024 48c13.255 0 24-10.745 24-24 0-3.516-.756-6.856-2.115-9.866-4.659 15.143-16.608 27.092-31.75 31.751z",
-  fill: "#6875F5"
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_4 = [_hoisted_2, _hoisted_3];
+var _hoisted_2 = [_hoisted_1];
 function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_1, _hoisted_4);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, _hoisted_2);
 }
 
 /***/ }),
@@ -25199,18 +25166,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
-  "class": "w-16 h-16",
-  viewBox: "0 0 48 48",
-  fill: "none",
-  xmlns: "http://www.w3.org/2000/svg"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  d: "M11.395 44.428C4.557 40.198 0 32.632 0 24 0 10.745 10.745 0 24 0a23.891 23.891 0 0113.997 4.502c-.2 17.907-11.097 33.245-26.602 39.926z",
-  fill: "#6875F5"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  d: "M14.134 45.885A23.914 23.914 0 0024 48c13.255 0 24-10.745 24-24 0-3.516-.756-6.856-2.115-9.866-4.659 15.143-16.608 27.092-31.75 31.751z",
-  fill: "#6875F5"
-})], -1
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "images/cimaup.png"
+}, null, -1
 /* HOISTED */
 );
 
@@ -29804,7 +29762,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mb-4 text-sm text-gray-600"
-}, " This is a secure area of the application. Please confirm your password before continuing. ", -1
+}, " Il s'agit d'une zone sécurisée de l'application. Veuillez confirmer votre mot de passe avant de continuer. ", -1
 /* HOISTED */
 );
 
@@ -29812,7 +29770,7 @@ var _hoisted_2 = {
   "class": "flex justify-end mt-4"
 };
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Confirm ");
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Confirmer ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
@@ -29844,7 +29802,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         }, ["prevent"]))
       }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "password",
-        value: "Password"
+        value: "Mot de passe"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "password",
         type: "password",
@@ -29902,7 +29860,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mb-4 text-sm text-gray-600"
-}, " Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one. ", -1
+}, " Mot de passe oublié? Aucun problème. Indiquez-nous simplement votre adresse e-mail et nous vous enverrons par e-mail un lien de réinitialisation de mot de passe qui vous permettra d'en choisir un nouveau. ", -1
 /* HOISTED */
 );
 
@@ -29914,7 +29872,7 @@ var _hoisted_3 = {
   "class": "flex items-center justify-end mt-4"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Email Password Reset Link ");
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Lien de réinitialisation du mot de passe par Email ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
@@ -30018,7 +29976,7 @@ var _hoisted_4 = {
 
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "ml-2 text-sm text-gray-600"
-}, "Remember me", -1
+}, "Se souvenir de moi", -1
 /* HOISTED */
 );
 
@@ -30026,9 +29984,9 @@ var _hoisted_6 = {
   "class": "flex items-center justify-end mt-4"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Forgot your password? ");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Mot de passe oublié? ");
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Log in ");
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Se Connecter ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
@@ -30081,7 +30039,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "password",
-        value: "Password"
+        value: "Mot de passe"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "password",
         type: "password",
@@ -30187,9 +30145,9 @@ var _hoisted_11 = {
   "class": "flex items-center justify-end mt-4"
 };
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Already registered? ");
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Déjà inscrit? ");
 
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Register ");
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" S'inscrire ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
@@ -30225,7 +30183,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         }, ["prevent"]))
       }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "name",
-        value: "Name"
+        value: "Nom"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "name",
         type: "text",
@@ -30255,7 +30213,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "password",
-        value: "Password"
+        value: "Mot de passe"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "password",
         type: "password",
@@ -30270,7 +30228,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "password_confirmation",
-        value: "Confirm Password"
+        value: "Confirmer votre mot de passe"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "password_confirmation",
         type: "password",
@@ -30376,7 +30334,7 @@ var _hoisted_3 = {
   "class": "flex items-center justify-end mt-4"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Reset Password ");
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Réinitialiser le mot de passe ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
@@ -30423,7 +30381,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "password",
-        value: "Password"
+        value: "Mot de passe"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "password",
         type: "password",
@@ -30438,7 +30396,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["modelValue"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "password_confirmation",
-        value: "Confirm Password"
+        value: "Confirmer votre mot de passe"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "password_confirmation",
         type: "password",
@@ -30496,9 +30454,9 @@ var _hoisted_1 = {
   "class": "mb-4 text-sm text-gray-600"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Please confirm access to your account by entering the authentication code provided by your authenticator application. ");
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Veuillez confirmer l'accès à votre compte en saisissant le code d'authentification fourni par votre application d'authentification. ");
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Please confirm access to your account by entering one of your emergency recovery codes. ");
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Veuillez confirmer l'accès à votre compte en saisissant l'un de vos codes de récupération d'urgence. ");
 
 var _hoisted_4 = {
   key: 0
@@ -30510,11 +30468,11 @@ var _hoisted_6 = {
   "class": "flex items-center justify-end mt-4"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Use a recovery code ");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Utiliser un code de récupération ");
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Use an authentication code ");
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Utiliser un code d'authentification ");
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Log in ");
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Connexion ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
@@ -30571,7 +30529,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["modelValue"])])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "recovery_code",
-        value: "Recovery Code"
+        value: "Code de récupération"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         ref: "recovery_code",
         id: "recovery_code",
@@ -30642,7 +30600,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mb-4 text-sm text-gray-600"
-}, " Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn't receive the email, we will gladly send you another. ", -1
+}, " Merci pour votre inscription! Avant de commencer, pourriez-vous vérifier votre adresse e-mail en cliquant sur le lien que nous venons de vous envoyer ? Si vous n'avez pas reçu l'e-mail, nous vous en enverrons un autre avec plaisir. ", -1
 /* HOISTED */
 );
 
@@ -30654,9 +30612,9 @@ var _hoisted_3 = {
   "class": "mt-4 flex items-center justify-between"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Resend Verification Email ");
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Renvoyer l'Email de vérification ");
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Log Out");
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Se déconnecter");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
@@ -30676,7 +30634,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_authentication_card_logo)];
     }),
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_1, _ctx.verificationLinkSent ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, " A new verification link has been sent to the email address you provided during registration. ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+      return [_hoisted_1, _ctx.verificationLinkSent ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, " Un nouveau lien de vérification a été envoyé à l'adresse e-mail que vous avez fournie lors de l'inscription. ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
         onSubmit: _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
           return _ctx.submit && _ctx.submit.apply(_ctx, arguments);
         }, ["prevent"]))
@@ -30767,11 +30725,11 @@ var _hoisted_1 = {
   id: "main"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<br><br><br><br><h1 class=\"demo-title\"> Sélectionnez le forfait qui vous convient<br></h1><h2>Regardez autant que vous voulez. Sans publicité.</h2><h2>Recommandations personnalisées.</h2><h2>Changez ou annulez votre forfait à tout moment.</h2><br><br><br><br><div class=\"pricing-table\"><div class=\"ptable-item\"><div class=\"ptable-single\"><div class=\"ptable-header\"><div class=\"ptable-title\"><h2>Essentiel</h2></div><div class=\"ptable-price\"><h2><small>€</small>8.99<span>/ M</span></h2></div></div><div class=\"ptable-body\"><div class=\"ptable-description\"><ul><li>Qualité vidéo : Bonne</li><li>Résolution : 480P</li><li>Netflix sur votre TV, ordinateur, smartphone et tablette : inclus</li></ul></div></div><div class=\"ptable-footer\"><div class=\"ptable-action\"><a href=\"\">Acheter</a></div></div></div></div><div class=\"ptable-item featured-item\"><div class=\"ptable-single\"><div class=\"ptable-header\"><div class=\"ptable-status\"><span>Hot</span></div><div class=\"ptable-title\"><h2>Standard</h2></div><div class=\"ptable-price\"><h2><small>€</small>12.99<span>/ M</span></h2></div></div><div class=\"ptable-body\"><div class=\"ptable-description\"><ul><li>Qualité vidéo : Meilleure</li><li>Résolution : 1080P</li><li>Netflix sur votre TV, ordinateur, smartphone et tablette : inclus</li></ul></div></div><div class=\"ptable-footer\"><div class=\"ptable-action\"><a href=\"\">Acheter</a></div></div></div></div><div class=\"ptable-item\"><div class=\"ptable-single\"><div class=\"ptable-header\"><div class=\"ptable-title\"><h2>Premium</h2></div><div class=\"ptable-price\"><h2><small>€</small>18.99<span>/ M</span></h2></div></div><div class=\"ptable-body\"><div class=\"ptable-description\"><ul><li>Qualité vidéo : Optimale </li><li>Résolution : 4K+HDR</li><li>Netflix sur votre TV, ordinateur, smartphone et tablette : inclus</li></ul></div></div><div class=\"ptable-footer\"><div class=\"ptable-action\"><a href=\"\">Acheter</a></div></div></div></div></div>", 13);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<br><br><div align=\"center\"><img src=\"images/cimaup.png\"></div><br><br><br><br><h1 class=\"demo-title\"> Sélectionnez le forfait qui vous convient<br></h1><h2>Regardez autant que vous voulez. Sans publicité.</h2><h2>Recommandations personnalisées.</h2><h2>Changez ou annulez votre forfait à tout moment.</h2><br><br><br><br><div class=\"pricing-table\"><div class=\"ptable-item\"><div class=\"ptable-single\"><div class=\"ptable-header\"><div class=\"ptable-title\"><h2>Essentiel</h2></div><div class=\"ptable-price\"><h2><small>€</small>8.99<span>/ M</span></h2></div></div><div class=\"ptable-body\"><div class=\"ptable-description\"><ul><li>Qualité vidéo : Bonne</li><li>Résolution : 480P</li><li>Netflix sur votre TV, ordinateur, smartphone et tablette : inclus</li></ul></div></div><div class=\"ptable-footer\"><div class=\"ptable-action\"><a href=\"\">Acheter</a></div></div></div></div><div class=\"ptable-item featured-item\"><div class=\"ptable-single\"><div class=\"ptable-header\"><div class=\"ptable-status\"><span>Hot</span></div><div class=\"ptable-title\"><h2>Standard</h2></div><div class=\"ptable-price\"><h2><small>€</small>12.99<span>/ M</span></h2></div></div><div class=\"ptable-body\"><div class=\"ptable-description\"><ul><li>Qualité vidéo : Meilleure</li><li>Résolution : 1080P</li><li>Netflix sur votre TV, ordinateur, smartphone et tablette : inclus</li></ul></div></div><div class=\"ptable-footer\"><div class=\"ptable-action\"><a href=\"\">Acheter</a></div></div></div></div><div class=\"ptable-item\"><div class=\"ptable-single\"><div class=\"ptable-header\"><div class=\"ptable-title\"><h2>Premium</h2></div><div class=\"ptable-price\"><h2><small>€</small>18.99<span>/ M</span></h2></div></div><div class=\"ptable-body\"><div class=\"ptable-description\"><ul><li>Qualité vidéo : Optimale </li><li>Résolution : 4K+HDR</li><li>Netflix sur votre TV, ordinateur, smartphone et tablette : inclus</li></ul></div></div><div class=\"ptable-footer\"><div class=\"ptable-action\"><a href=\"\">Acheter</a></div></div></div></div></div>", 16);
 
-var _hoisted_15 = [_hoisted_2];
+var _hoisted_18 = [_hoisted_2];
 function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_15);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_18);
 }
 
 /***/ }),
@@ -30951,13 +30909,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Delete Account ");
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Supprimer votre compte ");
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Permanently delete your account. ");
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Supprimer définitivement votre compte. ");
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "max-w-xl text-sm text-gray-600"
-}, " Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain. ", -1
+}, " Une fois votre compte supprimé, toutes ses ressources et données seront définitivement supprimées. Avant de supprimer votre compte, veuillez télécharger les données ou informations que vous souhaitez conserver. ", -1
 /* HOISTED */
 );
 
@@ -30965,19 +30923,19 @@ var _hoisted_4 = {
   "class": "mt-5"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Delete Account ");
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Supprimer le compte ");
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Delete Account ");
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Supprimer le compte ");
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account. ");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Êtes-vous sûr de vouloir supprimer votre compte ? Une fois votre compte supprimé, toutes ses ressources et données seront définitivement supprimées. Veuillez saisir votre mot de passe pour confirmer que vous souhaitez supprimer définitivement votre compte. ");
 
 var _hoisted_8 = {
   "class": "mt-4"
 };
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Cancel ");
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Annuler ");
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Delete Account ");
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Supprimer le compte ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_jet_danger_button = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("jet-danger-button");
@@ -31022,7 +30980,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
             type: "password",
             "class": "mt-1 block w-3/4",
-            placeholder: "Password",
+            placeholder: "Mot de passe",
             ref: "password",
             modelValue: _ctx.form.password,
             "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
@@ -31096,13 +31054,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Browser Sessions ");
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Sessions de navigateur ");
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Manage and log out your active sessions on other browsers and devices. ");
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Gérez et déconnectez vos sessions actives sur d'autres navigateurs et appareils. ");
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "max-w-xl text-sm text-gray-600"
-}, " If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password. ", -1
+}, " Si nécessaire, vous pouvez vous déconnecter de toutes vos autres sessions de navigation sur tous vos appareils. Certaines de vos sessions récentes sont répertoriées ci-dessous ; cependant, cette liste peut ne pas être exhaustive. Si vous pensez que votre compte a été compromis, vous devez également mettre à jour votre mot de passe. ", -1
 /* HOISTED */
 );
 
@@ -31184,21 +31142,21 @@ var _hoisted_18 = {
   "class": "flex items-center mt-5"
 };
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Log Out Other Browser Sessions ");
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Se déconnecter des autres sessions du navigateur ");
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Done. ");
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Réalisé. ");
 
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Log Out Other Browser Sessions ");
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Se déconnecter des autres sessions du navigateur ");
 
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Please enter your password to confirm you would like to log out of your other browser sessions across all of your devices. ");
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Veuillez entrer votre mot de passe pour confirmer que vous souhaitez vous déconnecter de vos autres sessions de navigation sur tous vos appareils. ");
 
 var _hoisted_23 = {
   "class": "mt-4"
 };
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Cancel ");
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Annuler ");
 
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Log Out Other Browser Sessions ");
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Se déconnecter des autres sessions du navigateur ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_jet_button = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("jet-button");
@@ -31270,7 +31228,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return [_hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
             type: "password",
             "class": "mt-1 block w-3/4",
-            placeholder: "Password",
+            placeholder: "Mot de passe",
             ref: "password",
             modelValue: _ctx.form.password,
             "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
@@ -31344,9 +31302,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Two Factor Authentication ");
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Authentification à deux facteurs ");
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Add additional security to your account using two factor authentication. ");
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Sécurisez votre compte en utilisant l'authentification à deux facteurs. ");
 
 var _hoisted_3 = {
   key: 0,
@@ -31359,7 +31317,7 @@ var _hoisted_4 = {
 
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mt-3 max-w-xl text-sm text-gray-600"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application. ")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Lorsque l'authentification à deux facteurs est activée, vous serez invité à saisir un jeton aléatoire sécurisé lors de l'authentification. Vous pouvez récupérer ce jeton depuis l'application Google Authenticator de votre téléphone. ")], -1
 /* HOISTED */
 );
 
@@ -31374,7 +31332,7 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "mt-4 max-w-xl text-sm text-gray-600"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "font-semibold"
-}, " Two factor authentication is now enabled. Scan the following QR code using your phone's authenticator application. ")], -1
+}, " L'authentification à deux facteurs est maintenant activée. Scannez le code QR suivant à l'aide de l'application d'authentification de votre téléphone. ")], -1
 /* HOISTED */
 );
 
@@ -31387,7 +31345,7 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "class": "mt-4 max-w-xl text-sm text-gray-600"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "font-semibold"
-}, " Store these recovery codes in a secure password manager. They can be used to recover access to your account if your two factor authentication device is lost. ")], -1
+}, " Stockez ces codes de récupération dans un gestionnaire de mots de passe sécurisé. Ils peuvent être utilisés pour récupérer l'accès à votre compte si votre dispositif d'authentification à deux facteurs est perdu. ")], -1
 /* HOISTED */
 );
 
@@ -31401,7 +31359,7 @@ var _hoisted_14 = {
   key: 0
 };
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Enable ");
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Activer ");
 
 var _hoisted_16 = {
   key: 1
@@ -31409,7 +31367,7 @@ var _hoisted_16 = {
 
 var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Regenerate Recovery Codes ");
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Show Recovery Codes ");
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Afficher les codes de récupération ");
 
 var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Disable ");
 
@@ -31432,7 +31390,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [_hoisted_2];
     }),
     content: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_ctx.twoFactorEnabled ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h3", _hoisted_3, " You have enabled two factor authentication. ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h3", _hoisted_4, " You have not enabled two factor authentication. ")), _hoisted_5, _ctx.twoFactorEnabled ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [_ctx.qrCode ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      return [_ctx.twoFactorEnabled ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h3", _hoisted_3, " Vous avez activé l'authentification à deux facteurs. ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("h3", _hoisted_4, " Vous n'avez pas activé l'authentification à deux facteurs. ")), _hoisted_5, _ctx.twoFactorEnabled ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [_ctx.qrCode ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
         "class": "mt-4",
         innerHTML: _ctx.qrCode
       }, null, 8
@@ -31562,9 +31520,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Update Password ");
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Mettez à jour le mot de passe ");
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Ensure your account is using a long, random password to stay secure. ");
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Assurez-vous que votre compte utilise un mot de passe long et aléatoire pour rester en sécurité. ");
 
 var _hoisted_3 = {
   "class": "col-span-6 sm:col-span-4"
@@ -31578,7 +31536,7 @@ var _hoisted_5 = {
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Saved. ");
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Save ");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Enregister ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_jet_label = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("jet-label");
@@ -31605,7 +31563,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     form: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "current_password",
-        value: "Current Password"
+        value: "Mot de passe actuel"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "current_password",
         type: "password",
@@ -31625,7 +31583,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["message"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "password",
-        value: "New Password"
+        value: "Nouveau mot de passe"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "password",
         type: "password",
@@ -31645,7 +31603,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["message"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "password_confirmation",
-        value: "Confirm Password"
+        value: "Confirmez votre mot de passe"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "password_confirmation",
         type: "password",
@@ -31717,9 +31675,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Profile Information ");
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Détails du profile ");
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Update your account's profile information and email address. ");
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Mettez à jour vos information personnelle. ");
 
 var _hoisted_3 = {
   key: 0,
@@ -31733,9 +31691,9 @@ var _hoisted_6 = {
   "class": "mt-2"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Select A New Photo ");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Choisissez une nouvelle photo ");
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Remove Photo ");
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Supprimer votre photo ");
 
 var _hoisted_9 = {
   "class": "col-span-6 sm:col-span-4"
@@ -31746,7 +31704,7 @@ var _hoisted_10 = {
 
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Saved. ");
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Save ");
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Enregistrer ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_jet_label = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("jet-label");
@@ -31834,7 +31792,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       /* PROPS */
       , ["message"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Name "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_label, {
         "for": "name",
-        value: "Name"
+        value: "Nom"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_input, {
         id: "name",
         type: "text",
@@ -31926,7 +31884,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "font-semibold text-xl text-gray-800 leading-tight"
-}, " Profile ", -1
+}, " Mon profile ", -1
 /* HOISTED */
 );
 
@@ -32440,7 +32398,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n*,\r\n*::before,\r\n*::after {\r\n  box-sizing: border-box;\n}\n#main{\n}\n#bg {\r\n  position: fixed; \r\n  top: 0; \r\n  left: 0; \r\n  min-width: 100%;\r\n  min-height: 100%;\n}\nh2{\r\n  text-align: center;\r\n  font-size: 18px;\r\n  font-weight: 300;\r\n  color: #f6f8fa;\r\n  letter-spacing: 2px;\n}\nbody {\r\n  margin: 0;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  background-color: #1a1a2e;\n}\nh1.demo-title {\r\n  text-align: center;\r\n  font-size: 30px;\r\n  font-weight: 600;\r\n  color: #f6f8fa;\r\n  letter-spacing: 2px;\n}\nh1.demo-title a {\r\n  font-size: 16px;\r\n  font-weight: 300;\n}\n.pricing-table {\r\n  display: flex;\r\n  flex-flow: row wrap;\r\n  width: 100%;\r\n  max-width: 1100px;\r\n  margin: 0 auto;\r\n  background: #1a1a2e;\n}\n.pricing-table .ptable-item {\r\n  width: 33.33%;\r\n  padding: 0 15px;\r\n  margin-bottom: 30px;\n}\n@media (max-width: 992px) {\n.pricing-table .ptable-item {\r\n    width: 33.33%;\n}\n}\n@media (max-width: 768px) {\n.pricing-table .ptable-item {\r\n    width: 50%;\n}\n}\n@media (max-width: 576px) {\n.pricing-table .ptable-item {\r\n    width: 100%;\n}\n}\n.pricing-table .ptable-single {\r\n  position: relative;\r\n  width: 100%;\r\n  overflow: hidden;\n}\n.pricing-table .ptable-header,\r\n.pricing-table .ptable-body,\r\n.pricing-table .ptable-footer {\r\n  position: relative;\r\n  width: 100%;\r\n  text-align: center;\r\n  overflow: hidden;\n}\n.pricing-table .ptable-status ,\r\n.pricing-table .ptable-title,\r\n.pricing-table .ptable-price,\r\n.pricing-table .ptable-description,\r\n.pricing-table .ptable-action {\r\n  position: relative;\r\n  width: 100%;\r\n  text-align: center;\n}\n.pricing-table .ptable-single {\r\n  background: #f6f8fa;\n}\n.pricing-table .ptable-single:hover {\r\n  box-shadow: 0 0 10px #999999;\n}\n.pricing-table .ptable-header {\r\n  margin: 0 30px;\r\n  padding: 30px 0 45px 0;\r\n  width: auto;\r\n  background: #2A293E;\n}\n.pricing-table .ptable-header::before,\r\n.pricing-table .ptable-header::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 0;\r\n  height: 0;\r\n  border-bottom: 100px solid #f6f8fa;\n}\n.pricing-table .ptable-header::before {\r\n  right: 50%;\r\n  border-right: 250px solid transparent;\n}\n.pricing-table .ptable-header::after {\r\n  left: 50%;\r\n  border-left: 250px solid transparent;\n}\n.pricing-table .ptable-item.featured-item .ptable-header {\r\n  background: #FF6F61;\n}\n.pricing-table .ptable-status {\r\n  margin-top: -30px;\n}\n.pricing-table .ptable-status span {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 50px;\r\n  height: 30px;\r\n  padding: 5px 0;\r\n  text-align: center;\r\n  color: #FF6F61;\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  letter-spacing: 1px;\r\n  background: #2A293E;\n}\n.pricing-table .ptable-status span::before,\r\n.pricing-table .ptable-status span::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 0;\r\n  height: 0;\r\n  border-bottom: 10px solid #FF6F61;\n}\n.pricing-table .ptable-status span::before {\r\n  right: 50%;\r\n  border-right: 25px solid transparent;\n}\n.pricing-table .ptable-status span::after {\r\n  left: 50%;\r\n  border-left: 25px solid transparent;\n}\n.pricing-table .ptable-title h2 {\r\n  color: #ffffff;\r\n  font-size: 24px;\r\n  font-weight: 300;\r\n  letter-spacing: 2px;\n}\n.pricing-table .ptable-price h2 {\r\n  margin: 0;\r\n  color: #ffffff;\r\n  font-size: 45px;\r\n  font-weight: 700;\r\n  margin-left: 15px;\n}\n.pricing-table .ptable-price h2 small {\r\n  position: absolute;\r\n  font-size: 18px;\r\n  font-weight: 300;\r\n  margin-top: 16px;\r\n  margin-left: -15px;\n}\n.pricing-table .ptable-price h2 span {\r\n  margin-left: 3px;\r\n  font-size: 16px;\r\n  font-weight: 300;\n}\n.pricing-table .ptable-body {\r\n  padding: 20px 0;\n}\n.pricing-table .ptable-description ul {\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style: none;\n}\n.pricing-table .ptable-description ul li {\r\n  color: #2A293E;\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  letter-spacing: 1px;\r\n  padding: 7px;\r\n  border-bottom: 1px solid #dedede;\n}\n.pricing-table .ptable-description ul li:last-child {\r\n  border: none;\n}\n.pricing-table .ptable-footer {\r\n  padding-bottom: 30px;\n}\n.pricing-table .ptable-action a {\r\n  display: inline-block;\r\n  padding: 10px 20px;\r\n  color: #FF6F61;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  letter-spacing: 2px;\r\n  text-decoration: none;\r\n  background: #2A293E;\n}\n.pricing-table .ptable-action a:hover {\r\n  color: #2A293E;\r\n  background: #FF6F61;\n}\n.pricing-table .ptable-item.featured-item .ptable-action a {\r\n  color: #2A293E;\r\n  background: #FF6F61;\n}\n.pricing-table .ptable-item.featured-item .ptable-action a:hover {\r\n  color: #FF6F61;\r\n  background: #2A293E;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n*,\r\n*::before,\r\n*::after {\r\n  box-sizing: border-box;\n}\n.logo{\r\n  text-align:center;\n}\nh2{\r\n  text-align: center;\r\n  font-size: 18px;\r\n  font-weight: 300;\r\n  color: #f6f8fa;\r\n  letter-spacing: 2px;\n}\nbody {\r\n  margin: 0;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  background-color: #1a1a2e;\n}\nh1.demo-title {\r\n  text-align: center;\r\n  font-size: 30px;\r\n  font-weight: 600;\r\n  color: #f6f8fa;\r\n  letter-spacing: 2px;\n}\nh1.demo-title a {\r\n  font-size: 16px;\r\n  font-weight: 300;\n}\n.pricing-table {\r\n  display: flex;\r\n  flex-flow: row wrap;\r\n  width: 100%;\r\n  max-width: 1100px;\r\n  margin: 0 auto;\r\n  background: #1a1a2e;\n}\n.pricing-table .ptable-item {\r\n  width: 33.33%;\r\n  padding: 0 15px;\r\n  margin-bottom: 30px;\n}\n@media (max-width: 992px) {\n.pricing-table .ptable-item {\r\n    width: 33.33%;\n}\n}\n@media (max-width: 768px) {\n.pricing-table .ptable-item {\r\n    width: 50%;\n}\n}\n@media (max-width: 576px) {\n.pricing-table .ptable-item {\r\n    width: 100%;\n}\n}\n.pricing-table .ptable-single {\r\n  position: relative;\r\n  width: 100%;\r\n  overflow: hidden;\n}\n.pricing-table .ptable-header,\r\n.pricing-table .ptable-body,\r\n.pricing-table .ptable-footer {\r\n  position: relative;\r\n  width: 100%;\r\n  text-align: center;\r\n  overflow: hidden;\n}\n.pricing-table .ptable-status ,\r\n.pricing-table .ptable-title,\r\n.pricing-table .ptable-price,\r\n.pricing-table .ptable-description,\r\n.pricing-table .ptable-action {\r\n  position: relative;\r\n  width: 100%;\r\n  text-align: center;\n}\n.pricing-table .ptable-single {\r\n  background: #f6f8fa;\n}\n.pricing-table .ptable-single:hover {\r\n  box-shadow: 0 0 10px #999999;\n}\n.pricing-table .ptable-header {\r\n  margin: 0 30px;\r\n  padding: 30px 0 45px 0;\r\n  width: auto;\r\n  background: #2A293E;\n}\n.pricing-table .ptable-header::before,\r\n.pricing-table .ptable-header::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 0;\r\n  height: 0;\r\n  border-bottom: 100px solid #f6f8fa;\n}\n.pricing-table .ptable-header::before {\r\n  right: 50%;\r\n  border-right: 250px solid transparent;\n}\n.pricing-table .ptable-header::after {\r\n  left: 50%;\r\n  border-left: 250px solid transparent;\n}\n.pricing-table .ptable-item.featured-item .ptable-header {\r\n  background: #FF6F61;\n}\n.pricing-table .ptable-status {\r\n  margin-top: -30px;\n}\n.pricing-table .ptable-status span {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 50px;\r\n  height: 30px;\r\n  padding: 5px 0;\r\n  text-align: center;\r\n  color: #FF6F61;\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  letter-spacing: 1px;\r\n  background: #2A293E;\n}\n.pricing-table .ptable-status span::before,\r\n.pricing-table .ptable-status span::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 0;\r\n  height: 0;\r\n  border-bottom: 10px solid #FF6F61;\n}\n.pricing-table .ptable-status span::before {\r\n  right: 50%;\r\n  border-right: 25px solid transparent;\n}\n.pricing-table .ptable-status span::after {\r\n  left: 50%;\r\n  border-left: 25px solid transparent;\n}\n.pricing-table .ptable-title h2 {\r\n  color: #ffffff;\r\n  font-size: 24px;\r\n  font-weight: 300;\r\n  letter-spacing: 2px;\n}\n.pricing-table .ptable-price h2 {\r\n  margin: 0;\r\n  color: #ffffff;\r\n  font-size: 45px;\r\n  font-weight: 700;\r\n  margin-left: 15px;\n}\n.pricing-table .ptable-price h2 small {\r\n  position: absolute;\r\n  font-size: 18px;\r\n  font-weight: 300;\r\n  margin-top: 16px;\r\n  margin-left: -15px;\n}\n.pricing-table .ptable-price h2 span {\r\n  margin-left: 3px;\r\n  font-size: 16px;\r\n  font-weight: 300;\n}\n.pricing-table .ptable-body {\r\n  padding: 20px 0;\n}\n.pricing-table .ptable-description ul {\r\n  margin: 0;\r\n  padding: 0;\r\n  list-style: none;\n}\n.pricing-table .ptable-description ul li {\r\n  color: #2A293E;\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  letter-spacing: 1px;\r\n  padding: 7px;\r\n  border-bottom: 1px solid #dedede;\n}\n.pricing-table .ptable-description ul li:last-child {\r\n  border: none;\n}\n.pricing-table .ptable-footer {\r\n  padding-bottom: 30px;\n}\n.pricing-table .ptable-action a {\r\n  display: inline-block;\r\n  padding: 10px 20px;\r\n  color: #FF6F61;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  letter-spacing: 2px;\r\n  text-decoration: none;\r\n  background: #2A293E;\n}\n.pricing-table .ptable-action a:hover {\r\n  color: #2A293E;\r\n  background: #FF6F61;\n}\n.pricing-table .ptable-item.featured-item .ptable-action a {\r\n  color: #2A293E;\r\n  background: #FF6F61;\n}\n.pricing-table .ptable-item.featured-item .ptable-action a:hover {\r\n  color: #FF6F61;\r\n  background: #2A293E;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

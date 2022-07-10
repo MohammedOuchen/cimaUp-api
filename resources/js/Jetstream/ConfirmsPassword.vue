@@ -48,13 +48,13 @@
 
         props: {
             title: {
-                default: 'Confirm Password',
+                default: 'Confirmez le mot de passe',
             },
             content: {
-                default: 'For your security, please confirm your password to continue.',
+                default: 'Pour votre sécurité, veuillez confirmer votre mot de passe pour continuer.',
             },
             button: {
-                default: 'Confirm',
+                default: 'Confirmer',
             }
         },
 
