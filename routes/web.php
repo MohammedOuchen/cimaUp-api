@@ -36,3 +36,7 @@ Route::get('/partner/login', [AuthenticatedSessionController::class, 'create'])-
 
 // Route::post('/login', [AuthenticatedSessionController::class, 'store']);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
