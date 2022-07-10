@@ -21,9 +21,9 @@ Route::get('/', function () {
    return view('Client.homePage');
 });
 
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return Inertia::render('Dashboard');
-// })->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->name('dashboard');
 
 // page login for admin
 Route::get('/admin/login', [AuthenticatedSessionController::class, 'create'])->middleware(['guest'])->name('admin.login');
@@ -35,4 +35,3 @@ Route::get('/partner/login', [AuthenticatedSessionController::class, 'create'])-
 // Route::post('/login-user', [AuthenticatedSessionController::class, 'store'])->middleware('guest')->name('auth.user.login');
 
 // Route::post('/login', [AuthenticatedSessionController::class, 'store']);
-
