@@ -9,9 +9,9 @@
     <div class="container text-center my-auto">
         <h1 class="mb-1">Black Widow</h1>
         <h3 class="mb-5">
-            <em>Coming Soon On FLICK PLAY</em>
+            <em>Coming Soon On CimaUp</em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow/BlackWidow.html">Watch Trailer
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow.html">Watch Trailer
             Now</a>
     </div>
     <div class="overlay"></div>
@@ -21,6 +21,14 @@
 <!-- upcoming movies section start -->
 <section id="UpcomingMovies">
     <div class="Container">
+        <div class="topnav">
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div> 
         <h2>Upcoming Movies</h2>
         <div class="row Movies">
             <div class="col-lg-4 col-md-6">
@@ -34,17 +42,17 @@
             <div class="col-lg-4 col-md-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/TheBatman/TheBatman.html"><img
-                                src="Images/UpcomingMoviesimages/TheBatman.jpg"></a></div>
+                                src="Images/TheBatman.jpg"></a></div>
                     <div class="col-6"><a href="Movies/WonderWoman1984/WonderWoman1984.html"><img
-                                src="Images/UpcomingMoviesimages/WonderWoman1984.jpg"></a></div>
+                                src="Images/WonderWoman1984.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/PeterRabbit2TheRunaway/PeterRabbit2TheRunaway.html"><img
-                                src="Images/UpcomingMoviesimages/PeterRabbit2TheRunaway.jpg"></a></div>
+                                src="Images/PeterRabbit2TheRunaway.jpg"></a></div>
                     <div class="col-6"><a href="Movies/JungleCruise/JungleCruise.html"><img
-                                src="Images/UpcomingMoviesimages/JungleCruise.jpg"></a></div>
+                                src="Images/JungleCruise.jpg"></a></div>
                 </div>
             </div>
         </div>
@@ -61,34 +69,34 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/JohnWick3/JohnWick3.html"><img
-                                src="Images/TopRatedMoviesImages/JohnWick.jpg"></a></div>
+                                src="Images/JohnWick.jpg"></a></div>
                     <div class="col-6"><a href="Movies/Bahubali2/Bahubali2.html"><img
-                                src="Images/TopRatedMoviesImages/Bahubali2.jpg"></a></div>
+                                src="Images/Bahubali2.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/Joker/joker.html"><img
-                                src="Images/TopRatedMoviesImages/Joker.jpg"></a></div>
+                                src="Images/Joker.jpg"></a></div>
                     <div class="col-6"><a href="Movies/Deadpool2/Deadpool2.html"><img
-                                src="Images/TopRatedMoviesImages/Deadpool2.jpg"></a></div>
+                                src="Images/Deadpool2.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/Incredibles2/Incredibles2.html"><img
-                                src="Images/TopRatedMoviesImages/Incredibles2.jpg"></a></div>
+                                src="Images/Incredibles2.jpg"></a></div>
                     <div class="col-6"><a href="Movies/AvengersEndGame/AvengersEndGame.html"><img
-                                src="Images/TopRatedMoviesImages/AvengersEndGame.jpg"></a></div>
+                                src="Images/AvengersEndGame.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a
                             href="Movies/SpiderManIntoTheSpiderVerse/SpiderManIntoTheSpiderVerse.html"><img
-                                src="Images/TopRatedMoviesImages/SpiderManIntoTheSpiderVerse.jpg"></a></div>
+                                src="Images/SpiderManIntoTheSpiderVerse.jpg"></a></div>
                     <div class="col-6"><a href="Movies/GuardiansoftheGalaxy/GuardiansoftheGalaxy.html"><img
-                                src="Images/TopRatedMoviesImages/GuardiansoftheGalaxy.jpg"></a></div>
+                                src="Images/GuardiansoftheGalaxy.jpg"></a></div>
                 </div>
             </div>
         </div>
@@ -105,33 +113,33 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/AntMan2/AntMan2.html"><img
-                                src="Images/LatestMoviesImages/AntMan2.jpg"></a></div>
+                                src="Images/AntMan2.jpg"></a></div>
                     <div class="col-6"><a href="Movies/SpiderManFarFromHome/SpiderManFarFromHome.html"><img
-                                src="Images/LatestMoviesImages/SpiderManFarFromHome.png"></div>
+                                src="Images/SpiderManFarFromHome.png"></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/AvengersInfinityWar/AvengersInfinityWar.html"><img
-                                src="Images/LatestMoviesImages/AvengersInfinityWar.jpg"></a></div>
+                                src="Images/AvengersInfinityWar.jpg"></a></div>
                     <div class="col-6"><a href="Movies/WonderWoman/WonderWoman.html"><img
-                                src="Images/LatestMoviesImages/WonderWoman.jpg"></a></div>
+                                src="Images/WonderWoman.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/BlackPanther/BlackPanther.html"><img
-                                src="Images/LatestMoviesImages/BlackPanther.jpg"></a></div>
+                                src="Images/BlackPanther.jpg"></a></div>
                     <div class="col-6"><a href="Movies/Bloodshot/Bloodshot.html"><img
-                                src="Images/LatestMoviesImages/Bloodshot.jpg"></a></div>
+                                src="Images/Bloodshot.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/ProjectPower/ProjectPower.html"><img
-                                src="Images/LatestMoviesImages/ProjectPower.jpg"></a></div>
+                                src="Images/ProjectPower.jpg"></a></div>
                     <div class="col-6"><a href="Movies/SonictheHedgehog/SonictheHedgehog.html"><img
-                                src="Images/LatestMoviesImages/SonictheHedgehog.jpg"></a></div>
+                                src="Images/SonictheHedgehog.jpg"></a></div>
                 </div>
             </div>
         </div>
@@ -148,49 +156,49 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/Aladdin/Aladdin.html"><img
-                                src="Images/EnglishMoviesImages/Aladdin.jpg"></a></div>
+                                src="Images/Aladdin.jpg"></a></div>
                     <div class="col-6"><a href="Movies/AntMan/AntMan.html"><img
-                                src="Images/EnglishMoviesImages/AntMan.jpg"></a></div>
+                                src="Images/AntMan.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/ToyStory/ToyStory.html"><img
-                                src="Images/EnglishMoviesImages/ToyStory.jpg"></a></div>
+                                src="Images/ToyStory.jpg"></a></div>
                     <div class="col-6"><a href="Movies/TheDarkKnight/TheDarkKnight.html"><img
-                                src="Images/EnglishMoviesImages/TheDarkKnight.jpg"></a></div>
+                                src="Images/TheDarkKnight.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/TheGodfatherPart2/TheGodfatherPart2.html"><img
-                                src="Images/EnglishMoviesImages/TheGodfatherPart2.jpg"></a></div>
+                                src="Images/TheGodfatherPart2.jpg"></a></div>
                     <div class="col-6"><a href="Movies/Inception/Inception.html"><img
-                                src="Images/EnglishMoviesImages/Inception.jpg"></a></div>
+                                src="Images/Inception.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/AmzingSpiderMan2/AmzingSpiderMan2.html"><img
-                                src="Images/EnglishMoviesImages/AmzingSpiderMan2.jpg"></a></div>
+                                src="Images/AmzingSpiderMan2.jpg"></a></div>
                     <div class="col-6"><a href="Movies/Aquaman/Aquaman.html"><img
-                                src="Images/EnglishMoviesImages/Aquaman.jpg"></a></div>
+                                src="Images/Aquaman.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/CaptainMarvel/CaptainMarvel.html"><img
-                                src="Images/EnglishMoviesImages/CaptainMarvel.png"></a></div>
+                                src="Images/CaptainMarvel.png"></a></div>
                     <div class="col-6"><a href="Movies/DoctorStrange/DoctorStrange.html"><img
-                                src="Images/EnglishMoviesImages/DoctorStrange.jpg"></a></div>
+                                src="Images/DoctorStrange.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/IntoTheWoods/IntoTheWoods.html"><img
-                                src="Images/EnglishMoviesImages/IntoTheWoods.jpg"></a></div>
+                                src="Images/IntoTheWoods.jpg"></a></div>
                     <div class="col-6"><a href="Movies/Kin/Kin.html"><img
-                                src="Images/EnglishMoviesImages/Kin.jpg"></a></div>
+                                src="Images/Kin.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
@@ -217,33 +225,33 @@
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/Shivaay/Shivaay.html"><img
-                                src="Images/HindiMoviesImages/Shivaay.jpg"></a></div>
+                                src="Images/Shivaay.jpg"></a></div>
                     <div class="col-6"><a href="Movies/Sooryavanshi/Sooryavanshi.html"><img
-                                src="Images/HindiMoviesImages/Sooryavanshi.jpg"></div>
+                                src="Images/Sooryavanshi.jpg"></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/Padmaavat/Padmaavat.html"><img
-                                src="Images/HindiMoviesImages/Padmaavat.jpg"></a></div>
+                                src="Images/Padmaavat.jpg"></a></div>
                     <div class="col-6"><a href="Movies/KabirSingh/KabirSingh.html"><img
-                                src="Images/HindiMoviesImages/KabirSingh.jpg"></a></div>
+                                src="Images/KabirSingh.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/BhootPartOne/BhootPartOne.html"><img
-                                src="Images/HindiMoviesImages/BhootPartOne.jpg"></a></div>
+                                src="Images/BhootPartOne.jpg"></a></div>
                     <div class="col-6"><a href="Movies/Dhaakad/Dhaakad.html"><img
-                                src="Images/HindiMoviesImages/Dhaakad.jpg"></a></div>
+                                src="Images/Dhaakad.jpg"></a></div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="row">
                     <div class="col-6"><a href="Movies/Drive/Drive.html"><img
-                                src="Images/HindiMoviesImages/Drive.jpg"></a></div>
+                                src="Images/Drive.jpg"></a></div>
                     <div class="col-6"><a href="Movies/Darbar/Darbar.html"><img
-                                src="Images/HindiMoviesImages/Darbar.jpg"></a></div>
+                                src="Images/Darbar.jpg"></a></div>
                 </div>
             </div>
         </div>
