@@ -25,6 +25,10 @@ Route::get('/subscription', function () {
     return Inertia::render('Client/Subscription');
  });
 
+ Route::get('/reservation', function () {
+   return Inertia::render('Client/Reservation');
+});
+
  Route::get('/ld', function () {
     return Inertia::render('LandingPage');
  });

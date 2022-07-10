@@ -2064,9 +2064,6 @@ select {
 .ease-in {
 	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
-body{
-    background-color: #1a1a2e;
-}
 .checked\:border-blue-600:checked {
 	--tw-border-opacity: 1;
 	border-color: rgba(37, 99, 235, var(--tw-border-opacity));
