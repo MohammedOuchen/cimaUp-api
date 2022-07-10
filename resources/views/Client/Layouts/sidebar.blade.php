@@ -6,16 +6,16 @@
 <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
-            <a class="js-scroll-trigger" href="#page-top">CimaUp</a>
+            <a class="js-scroll-trigger" href="#page-top">CIMAUP</a>
         </li>
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#UpcomingMovies">Coming Next</a>
+            <a class="js-scroll-trigger" href="#UpcomingMovies">Tendances actuelles</a>
         </li>
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#TopRatedMovies">Top Movies</a>
+            <a class="js-scroll-trigger" href="#TopRatedMovies">Action</a>
         </li>
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#LatestMovies">Latest Movies</a>
+            <a class="js-scroll-trigger" href="#LatestMovies">Drames</a>
         </li>
         <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#EnglishMovies">English Movies</a>

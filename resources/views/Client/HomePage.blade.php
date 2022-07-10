@@ -21,109 +21,180 @@
 </header>
 
 
+@if (count($search))
+<!-- top rated movies section start -->
+<section id="TopRatedMovies">
+    <div class="Container">
+         <div class="topnav">
+             <div class="search-container">
+                 <form action="{{ route('home') }}" method="GET">
+                     <input type="text" placeholder="Titre, genres .." name="search" value="{{ $metaSearch }}">
+                     <button type="submit"><i class="fa fa-search"></i></button>
+                 </form>
+             </div>
+         </div>
+
+
+        <div class="row Movies">
+            @php
+                $count = 0;
+            @endphp
+                @foreach ($search as $episode)
+                        @if ($count % 2 == 0)
+                            <div class="col-lg-4 col-md-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="Movies/Venom2/Venom2.html">
+                                            <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                        </a>
+                                    </div>
+                        @else
+
+                                <div class="col-6">
+                                    <a href="Movies/Morbius/Morbius.html">
+                                        <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                    @php
+                        $count++;
+                    @endphp
+
+                @endforeach
+        </div>
+    </div>
+</section>
+<!-- top rated movies section end -->
+@endif
+
+
 <!-- upcoming movies section start -->
 <section id="UpcomingMovies">
     <div class="Container">
+        @if (!count($search))
         <div class="topnav">
-            
-        <div class="dropdown">
-            <button class="dropbtn">
-                Catégories
-                <svg id="filtericon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
-                </svg>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Action</a>
-                <a href="#">Drama</a>
-                <a href="#">Comédie</a>
-            </div>
-        </div>
-
             <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
+                <form action="{{ route('home') }}" method="GET">
+                    <input type="text" placeholder="Titre, genres .." name="search" value="{{ $metaSearch }}">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
-        </div> 
-        <br>
-        <br>
-        <br>
-        <h2>Upcoming Movies</h2>
+        </div>
+        @endif
+        <h2>Tendances actuelles</h2>
         <div class="row Movies">
-            <div class="col-lg-4 col-md-6">
-                <div class="row">
-                    <div class="col-6"><a href="Movies/Venom2/Venom2.html"><img
-                                src="{{ asset('Images/Venom2.jpg') }}"></a></div>
-                    <div class="col-6"><a href="Movies/Morbius/Morbius.html"><img
-                                src="{{ asset('Images/Morbius.jpg') }}"></a></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="row">
-                    <div class="col-6"><a href="Movies/TheBatman/TheBatman.html"><img
-                                src="Images/TheBatman.jpg"></a></div>
-                    <div class="col-6"><a href="Movies/WonderWoman1984/WonderWoman1984.html"><img
-                                src="Images/WonderWoman1984.jpg"></a></div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="row">
-                    <div class="col-6"><a href="Movies/PeterRabbit2TheRunaway/PeterRabbit2TheRunaway.html"><img
-                                src="Images/PeterRabbit2TheRunaway.jpg"></a></div>
-                    <div class="col-6"><a href="Movies/JungleCruise/JungleCruise.html"><img
-                                src="Images/JungleCruise.jpg"></a></div>
-                </div>
-            </div>
+            @php
+                $count = 0;
+            @endphp
+                @foreach ($bestEpisodes as $episode)
+                        @if ($count % 2 == 0)
+                            <div class="col-lg-4 col-md-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="Movies/Venom2/Venom2.html">
+                                            <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                        </a>
+                                    </div>
+                        @else
+
+                                <div class="col-6">
+                                    <a href="Movies/Morbius/Morbius.html">
+                                        <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                    @php
+                        $count++;
+                    @endphp
+
+                @endforeach
         </div>
     </div>
 </section>
 <!-- upcoming movies section end -->
 
-
+@if (count($actionEpisodes))
 <!-- top rated movies section start -->
 <section id="TopRatedMovies">
     <div class="Container">
-        <h2>Top Rated Movies</h2>
+        <h2>Action</h2>
         <div class="row Movies">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="row">
-                    <div class="col-6"><a href="Movies/JohnWick3/JohnWick3.html"><img
-                                src="Images/JohnWick.jpg"></a></div>
-                    <div class="col-6"><a href="Movies/Bahubali2/Bahubali2.html"><img
-                                src="Images/Bahubali2.jpg"></a></div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="row">
-                    <div class="col-6"><a href="Movies/Joker/joker.html"><img
-                                src="Images/Joker.jpg"></a></div>
-                    <div class="col-6"><a href="Movies/Deadpool2/Deadpool2.html"><img
-                                src="Images/Deadpool2.jpg"></a></div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="row">
-                    <div class="col-6"><a href="Movies/Incredibles2/Incredibles2.html"><img
-                                src="Images/Incredibles2.jpg"></a></div>
-                    <div class="col-6"><a href="Movies/AvengersEndGame/AvengersEndGame.html"><img
-                                src="Images/AvengersEndGame.jpg"></a></div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="row">
-                    <div class="col-6"><a
-                            href="Movies/SpiderManIntoTheSpiderVerse/SpiderManIntoTheSpiderVerse.html"><img
-                                src="Images/SpiderManIntoTheSpiderVerse.jpg"></a></div>
-                    <div class="col-6"><a href="Movies/GuardiansoftheGalaxy/GuardiansoftheGalaxy.html"><img
-                                src="Images/GuardiansoftheGalaxy.jpg"></a></div>
-                </div>
-            </div>
+            @php
+                $count = 0;
+            @endphp
+                @foreach ($actionEpisodes as $episode)
+                        @if ($count % 2 == 0)
+                            <div class="col-lg-4 col-md-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="Movies/Venom2/Venom2.html">
+                                            <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                        </a>
+                                    </div>
+                        @else
+
+                                <div class="col-6">
+                                    <a href="Movies/Morbius/Morbius.html">
+                                        <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                    @php
+                        $count++;
+                    @endphp
+
+                @endforeach
         </div>
     </div>
 </section>
 <!-- top rated movies section end -->
+@endif
+
+
+@if (count($drameEpisodes))
+<!-- top rated movies section start -->
+<section id="TopRatedMovies">
+    <div class="Container">
+        <h2>Drames</h2>
+        <div class="row Movies">
+            @php
+                $count = 0;
+            @endphp
+                @foreach ($drameEpisodes as $episode)
+                        @if ($count % 2 == 0)
+                            <div class="col-lg-4 col-md-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="Movies/Venom2/Venom2.html">
+                                            <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                        </a>
+                                    </div>
+                        @else
+
+                                <div class="col-6">
+                                    <a href="Movies/Morbius/Morbius.html">
+                                        <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                    @php
+                        $count++;
+                    @endphp
+
+                @endforeach
+        </div>
+    </div>
+</section>
+<!-- top rated movies section end -->
+@endif
 
 
 <!-- latest movies section start -->
