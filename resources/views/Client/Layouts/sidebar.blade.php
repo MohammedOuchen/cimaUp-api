@@ -6,7 +6,7 @@
 <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
-            <a class="js-scroll-trigger" href="#page-top">Flick Play</a>
+            <a class="js-scroll-trigger" href="#page-top">CimaUp</a>
         </li>
         <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#UpcomingMovies">Coming Next</a>
