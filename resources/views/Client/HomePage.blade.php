@@ -9,7 +9,7 @@
     <div class="container text-center my-auto">
         <h1 class="mb-1">Black Widow</h1>
         <h3 class="mb-5">
-            <em>Coming Soon On FLICK PLAY</em>
+            <em>Coming Soon On CimaUp</em>
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow.html">Watch Trailer
             Now</a>
