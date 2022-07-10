@@ -5,6 +5,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Client\HomePageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,10 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 |
 */
 
-Route::get('/', function () {
-   return view('Client.homePage');
-});
+
+Route::get('/', [HomePageController::class, 'index'])->name('home');
+Route::get('/show/{id}', [HomePageController::class, 'show'])->name('show.episode');
+
 
 Route::get('/subscription', function () {
     return Inertia::render('Client/Subscription');
@@ -43,7 +45,3 @@ Route::get('/admin/login', [AuthenticatedSessionController::class, 'create'])->m
 // Page login for partner
 Route::get('/partner/login', [AuthenticatedSessionController::class, 'create'])->middleware(['guest'])->name('partner.login');
 
-
-// Route::post('/login-user', [AuthenticatedSessionController::class, 'store'])->middleware('guest')->name('auth.user.login');
-
-// Route::post('/login', [AuthenticatedSessionController::class, 'store']);
