@@ -20,6 +20,7 @@ use App\Http\Controllers\Client\HomePageController;
 
 
 Route::get('/', [HomePageController::class, 'index'])->name('home');
+Route::get('/show/{id}', [HomePageController::class, 'show'])->name('show.episode');
 
 
 Route::get('/subscription', function () {

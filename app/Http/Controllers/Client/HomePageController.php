@@ -54,4 +54,9 @@ class HomePageController extends Controller
             'metaSearch' => $metaSearch
         ]);
     }
+
+    public function show($id)
+    {
+        return view('Client.Episode.show');
+    }
 }
