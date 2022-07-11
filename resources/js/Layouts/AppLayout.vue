@@ -119,7 +119,7 @@
                                         <!-- Authentication -->
                                         <form @submit.prevent="logout">
                                             <jet-dropdown-link as="button">
-                                                Log Out
+                                            Se déconnecter
                                             </jet-dropdown-link>
                                         </form>
                                     </template>
