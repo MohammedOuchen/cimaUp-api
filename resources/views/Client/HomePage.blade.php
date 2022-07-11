@@ -4,18 +4,24 @@
 
 @include('Client.Layouts.sidebar')
 
+
+<!-- Header -->
+<header class="masthead d-flex" style="background-image: url(/images/BlackWidow.jpg);">
 <div id="cimaUpLogo">
     <img src="images/cimaup.png"/>
 </div>
-<!-- Header -->
-<header class="masthead d-flex">
-    <div class="container text-center my-auto">
+    <div class="container text-center my-auto" >
         <h1 class="mb-1">Black Widow</h1>
         <h3 class="mb-5">
             <em>Coming Soon On CimaUp</em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow.html">Watch Trailer
-            Now</a>
+        <a id="button1" class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow.html">Regarde la bande-annonce</a>
+        <br>
+        <br>
+        <a id="button2" class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow.html">Réserver un billet cinéma</a>
+        <br>
+        <br>
+        <a id="button3" class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow.html">S'abonner à CimaUp</a>
     </div>
     <div class="overlay"></div>
 </header>
@@ -28,7 +34,7 @@
          <div class="topnav">
              <div class="search-container">
                  <form action="{{ route('home') }}" method="GET">
-                     <input type="text" placeholder="Titre, genres .." name="search" value="{{ $metaSearch }}">
+                     <input type="text" placeholder="Titre, genres .." id="searchZone" name="search" value="{{ $metaSearch }}">
                      <button type="submit"><i class="fa fa-search"></i></button>
                  </form>
              </div>

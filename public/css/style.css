@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap");
 body,
 html {
-  width: 100%;
   margin:0;
   padding:0;
 }
@@ -120,6 +119,10 @@ body {
   font-size: 4rem;
   margin: 0;
   padding: 0;
+  color: #fff;
+}
+
+.masthead h3 em {
   color: #fff;
 }
 
@@ -259,6 +262,10 @@ h6 {
   background: #ccc;
 }
 
+#searchZone{
+  background-color: #d4d9f5;
+}
+
 @media screen and (max-width: 600px) {
   .topnav .search-container {
     float: none;
@@ -338,18 +345,14 @@ h6 {
   height: 20px;
 }
 
+
 #cimaUpLogo{
-  position:relative;
-  height: 100%;
-  width:100%;
-  margin-top: 80px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
-#cimaUpLogo img{
-  position:absolute;
-  top:180;
-  left:0;
-  right:0;
-  bottom:0;
-  margin:auto;
+#button1, #button2, #button3{
+  background-color: #7483e2;
 }
+
