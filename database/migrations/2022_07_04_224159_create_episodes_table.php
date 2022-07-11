@@ -20,6 +20,7 @@ class CreateEpisodesTable extends Migration
             $table->string('subtitle')->nullable();
             $table->string('description')->nullable();
             $table->string('categories')->nullable();
+            $table->string('link')->nullable();
             $table->time('duration')->nullable();
             $table->integer('evaluation')->nullable();
             $table->integer('serial_number')->nullable();

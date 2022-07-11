@@ -27,6 +27,7 @@
                         <th class="border p-3">titre</th>
                         <th class="border p-3">type</th>
                         <th class="border p-3">categories</th>
+                        <th class="border p-3">Link</th>
                         <th class="border p-3">Action</th>
                     </tr>
                 </thead>
@@ -41,8 +42,11 @@
                         <td class="border p-3">
                             {{ episode.type }}
                         </td>
-                           <td class="border p-3">
+                        <td class="border p-3">
                             {{ episode.categories }}
+                        </td>
+                        <td class="border p-3">
+                            {{ episode.link }}
                         </td>
                         <td class="border p-3">
                             <div class="flex space-between">

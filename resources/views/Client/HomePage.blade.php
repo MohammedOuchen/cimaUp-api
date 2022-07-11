@@ -203,7 +203,7 @@
 @endif
 
 
-<!-- latest movies section start -->
+{{-- <!-- latest movies section start -->
 <section id="LatestMovies">
     <div class="Container">
         <h2>Latest Movies</h2>
@@ -354,7 +354,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 @endsection
