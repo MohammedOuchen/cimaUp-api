@@ -28,6 +28,10 @@ Route::get('/cinema', function () {
    return view ('Client.Cinema.show');
 });
 
+Route::get('/contact', function () {
+   return view ('Client.Contact.show');
+});
+
 Route::get('/subscription', function () {
     return Inertia::render('Client/Subscription');
  });

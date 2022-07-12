@@ -140,6 +140,9 @@ header .toggle{
 width: 226px;
 font-size: 45px;
 overflow:hidden;
+position: absolute;
+margin-top: -50px;
+margin-left: 1500px;
 }
 .rating a {
     float: right;

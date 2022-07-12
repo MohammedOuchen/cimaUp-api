@@ -25,7 +25,7 @@
         <i class="social-icon fa fa-envelope"></i>
         <i class="social-icon fa fa-pinterest"></i>
         <i class="social-icon fa fa-youtube"></i>
-        <p>© Copyright 2020 FlickPlay</p>
+        <p>© Copyright 2022 Cima-Up</p>
     </footer>
     <!-- footer section end -->
 
