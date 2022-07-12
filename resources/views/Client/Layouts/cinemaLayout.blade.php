@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    @yield('contentEpisode')
+    @yield('contentCinema')
 
 </body>
 </html>

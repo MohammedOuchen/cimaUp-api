@@ -24,6 +24,40 @@
         <video src="TheBatman.mp4" controls="true"></video>
         <img src="close.png" alt="" class="close" onclick="toggle();">
     </div>
+
+    <!-- top rated movies section start -->
+<section id="Cinemas">
+    <div class="Container">
+        <h2>Actuellement en salles</h2>
+        <div class="row Movies">
+                <div class="col-lg-4 col-md-6">
+                    <div class="row">
+                        <div class="col-6"><a href="Movies/Venom2/Venom2.html"><img
+                                    src="images/CinemaParado.png"></a></div>
+                        <div class="col-6"><a href="Movies/Morbius/Morbius.html"><img
+                                    src="images/CinemaParado.png"></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row">
+                        <div class="col-6"><a href="Movies/TheBatman/TheBatman.html"><img
+                                    src="Images/CinemaParado.png"></a></div>
+                        <div class="col-6"><a href="Movies/WonderWoman1984/WonderWoman1984.html"><img
+                                    src="Images/CinemaParado.png"></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row">
+                        <div class="col-6"><a href="Movies/PeterRabbit2TheRunaway/PeterRabbit2TheRunaway.html"><img
+                                    src="Images/CinemaParado.png"></a></div>
+                        <div class="col-6"><a href="Movies/JungleCruise/JungleCruise.html"><img
+                                    src="Images/CinemaParado.png"></a></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
     <script>
         function toggle(){
         var trailer=document.querySelector('.trailer');
@@ -33,5 +67,9 @@
         video.pause();
     }
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 
 @endsection

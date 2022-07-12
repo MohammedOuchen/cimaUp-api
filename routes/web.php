@@ -31,6 +31,10 @@ Route::get('/subscription', function () {
    return Inertia::render('Client/Reservation');
 });
 
+ Route::get('/ld', function () {
+    return Inertia::render('LandingPage');
+ });
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
