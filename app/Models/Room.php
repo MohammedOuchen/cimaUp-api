@@ -26,4 +26,9 @@ class Room extends Model
     {
         return $this->BelongsTo(Cinema::class);
     }
+
+    public function offers()
+    {
+        return $this->hasMany(Offer::class);
+    }
 }

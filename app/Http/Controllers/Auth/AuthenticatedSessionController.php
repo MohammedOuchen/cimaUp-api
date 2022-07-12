@@ -57,7 +57,7 @@ class AuthenticatedSessionController extends Controller
             case 'admin.login':
 
                 if (Auth::user()->hasRole(Config::get('role.super_admin'))) {
-                    $redirect = route('admin.home');
+                    $redirect = route('admin.user.index');
                     break;
                 } else {
                     Auth::logout();
@@ -104,12 +104,13 @@ class AuthenticatedSessionController extends Controller
      */
     public function destroy(Request $request)
     {
+
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return back();
     }
 }

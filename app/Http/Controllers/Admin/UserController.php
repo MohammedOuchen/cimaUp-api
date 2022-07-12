@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Inertia\Inertia;
 use Spatie\Permission\Models\Role;
 
@@ -40,7 +41,11 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $roles = Role::all();
+
+        return Inertia::render('Admin/User/create', [
+            'roles' => $roles
+        ]);
     }
 
     /**
@@ -51,7 +56,15 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->all();
+        $validated['active'] = 1;
+        $validated['password'] = Hash::make($request['password']);
+
+        $user = User::create($validated);
+
+        $user->syncRoles($request->roles);
+
+        return redirect()->route('admin.user.index');
     }
 
     /**
@@ -73,7 +86,18 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $users = collect(User::find($id));
+        if(!$users){
+            return back();
+        }
+        $users->put('roles', array_values(User::query()->findOrFail($id)->roles->pluck('id')->toArray()));
+
+        $roles = Role::all();
+
+        return Inertia::render('Admin/User/create', [
+            'roles' => $roles,
+            'users' => $users,
+        ]);
     }
 
     /**
@@ -85,7 +109,15 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validated = $request->all();
+
+        $user = User::findOrFail($id);
+
+        $user->update($validated);
+
+        $user->syncRoles($request->roles);
+
+        return redirect()->route('admin.user.index');
     }
 
     /**
@@ -96,6 +128,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::findorFail($id);
+        $user->delete();
+        return back();
     }
 }

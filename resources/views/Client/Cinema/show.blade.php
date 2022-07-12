@@ -3,11 +3,13 @@
 @section('contentCinema')
 
     <div id="cimaUpLogo">
-        <img src="images/cimaup.png"/>
+        <a href="{{ route('home') }}">
+            <img src="{{ asset('Images/cimaup.png') }}"/>
+        </a>
     </div>
-    <h1>Cinema Parado</h1>
+    <h1>Cinema {{ $cinema->name  }}</h1>
     <br>
-    <h3>824 avenue du Lys La Cartonnerie - 77190 Dammarie-lès-Lys</h3>
+    <h3>{{ $cinema->address.' -- '.$cinema->additional_address.' '.$cinema->post_code.' , '.$cinema->city.' , '.$cinema->country }}</h3>
     <br>
     <hr>
     <br>
@@ -38,11 +40,10 @@
                 </div>
             </div>
 
-            
+
         </div>
 
         <br>
-
         <div class="form-row">
             <div class="col-md-2 mb-3">
                 <div class="dropdown">
@@ -78,7 +79,7 @@
             <label id="totalPrice"> Prix total: 24.99 €</label>
             </div>
         </div>
-        
+
         <div class="form-group">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>

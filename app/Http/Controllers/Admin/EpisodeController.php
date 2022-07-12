@@ -17,6 +17,7 @@ class EpisodeController extends Controller
     public function index()
     {
         $episodes = Episode::with('media')
+                        ->orderBy('id', 'desc')
                         ->get();
 
         $episodes->load([ 'media'])->append(['firstMediaUrl']);

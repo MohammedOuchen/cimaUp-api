@@ -8,15 +8,15 @@
             </div>
         </inertia-link>
         <inertia-link :href="route('admin.user.show', {id: user.id})" class="w-56 flex flex-col text-gray-600 dark:text-gray-400">
-            <span>Name</span>
+            <span>Nom et prénom</span>
             <div class="mt-2 text-black dark:text-gray-200">
                 {{user.full_name}}
             </div>
         </inertia-link>
         <inertia-link :href="route('admin.user.show', {id: user.id})" class="w-56 flex flex-col text-gray-600 dark:text-gray-400">
-            <span>username</span>
+            <span>Téléphone</span>
             <span class="mt-2 text-black dark:text-gray-200">
-                {{user.username}}
+                {{user.phone}}
             </span>
         </inertia-link>
         <inertia-link :href="route('admin.user.show', {id: user.id})" class="w-56 flex flex-col text-gray-600 dark:text-gray-400">
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="w-36 flex flex-col text-gray-600 dark:text-gray-400">
-            <span>Inscription date</span>
+            <span>Date d'inscription</span>
             <span class="mt-2 text-black dark:text-gray-200">
                 {{configDateTime(user.created_at)}}
             </span>
@@ -60,20 +60,20 @@
     </div>
     <jet-dialog-modal :show="this.ConfirmDeletion" @close="this.ConfirmDeletion = false">
         <template #title>
-            Delete User
+          Supprimer
         </template>
 
         <template #content>
-            Are you sure you want to delete user {{this.user.username}}? Once it is deleted, all of its resources and data will be permanently deleted.
+                Êtes-vous sûr de vouloir supprimer l'utilisateur {{this.user.username}}? Une fois supprimé, toutes ses ressources et données seront définitivement supprimées.
         </template>
 
         <template #footer>
             <jet-secondary-button @click="ConfirmDeletion = false">
-                Nevermind
+              Annuler
             </jet-secondary-button>
 
             <jet-danger-button class="ml-2" @click="deleteUser" :class="{ 'opacity-25': delUser.processing }" :disabled="delUser.processing">
-                Delete User
+               Supprimer l'utilisateur
             </jet-danger-button>
         </template>
     </jet-dialog-modal>
@@ -110,13 +110,13 @@
                 return moment(date).locale("en").format("MMM Do YYYY");
             },
             Edit(){
-                this.$inertia.visit(route('admin.users.edit', {id: this.user.id}))
+                this.$inertia.visit(route('admin.user.edit', {id: this.user.id}))
             },
             Delete(){
                 this.ConfirmDeletion = true
             },
             deleteUser(){
-                this.delUser.post(route('admin.users.destroy', {id: this.user.id}), {
+                this.delUser.post(route('admin.user.destroy', {id: this.user.id}), {
                     preserveScroll: true
                 })
             },

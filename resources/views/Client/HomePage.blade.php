@@ -202,6 +202,45 @@
 <!-- top rated movies section end -->
 @endif
 
+@if (count($comedyEpisodes))
+<!-- top rated movies section start -->
+<section id="TopRatedMovies">
+    <div class="Container">
+        <h2>Comédie</h2>
+        <div class="row Movies">
+            @php
+                $count = 0;
+            @endphp
+                @foreach ($comedyEpisodes as $episode)
+                        @if ($count % 2 == 0)
+                            <div class="col-lg-4 col-md-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="{{ route('show.episode', $episode->id) }}">
+                                            <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                        </a>
+                                    </div>
+                        @else
+
+                                    <div class="col-6">
+                                        <a href="{{ route('show.episode', $episode->id) }}">
+                                            <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    @endif
+                    @php
+                        $count++;
+                    @endphp
+
+                @endforeach
+        </div>
+    </div>
+</section>
+<!-- top rated movies section end -->
+@endif
+
 
 {{-- <!-- latest movies section start -->
 <section id="LatestMovies">
