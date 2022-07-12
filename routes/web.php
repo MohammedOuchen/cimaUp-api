@@ -29,7 +29,7 @@ Route::get('/cinema/{cinema_id}/{episode_id}',[HomePageController::class, 'showC
 
 Route::get('/subscription', function () {
     return Inertia::render('Client/Subscription');
- });
+ })->name('subscription');
 
  Route::get('/reservation', function () {
    return Inertia::render('Client/Reservation');

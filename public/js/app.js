@@ -25494,16 +25494,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _hoisted_1 = ["href"];
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   src: "images/cimaup.png"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_2 = [_hoisted_1];
+var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, _hoisted_2);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: _ctx.route('home')
+  }, _hoisted_3, 8
+  /* PROPS */
+  , _hoisted_1)]);
 }
 
 /***/ }),
@@ -26629,7 +26634,7 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "text-gray-900"
-}, "Dashboard", -1
+}, "Tableau de bord", -1
 /* HOISTED */
 );
 
@@ -26649,7 +26654,7 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 /* HOISTED */
 );
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Accounts list", -1
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Liste des comptes", -1
 /* HOISTED */
 );
 
@@ -28370,13 +28375,13 @@ var _hoisted_5 = {
   "class": "pb-2 flex items-center justify-between text-gray-600 dark:text-gray-400 border-b dark:border-gray-600"
 };
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span v-if=\"route().params['roles'] != 'Mangaka'  && route().params['roles'] != 'Reader'\" class=\"pr-5\">\r\n                                <span class=\"text-red-500 dark:text-red-200\">\r\n                                    {{this.users.length}}\r\n                                </span>\r\n                                Total Users\r\n                            </span>\r\n                            <span v-if=\"route().params['roles'] != 'Reader'\" class=\"pr-5\">\r\n                                <span class=\"text-red-500 dark:text-red-200\">\r\n                                    {{this.users.filter(user => user.roles.find(role => role.name == \"Mangaka\")).length}}\r\n                                </span>\r\n                                Mangakas\r\n                            </span>\r\n                            <span v-if=\"route().params['roles'] != 'Mangaka'\" class=\"pr-5\">\r\n                                <span class=\"text-red-500 dark:text-red-200\">\r\n                                    {{this.users.filter(user => user.roles.find(role => role.name == \"Reader\")).length}}\r\n                                </span>\r\n                                Readers\r\n                            </span> ")], -1
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, null, -1
 /* HOISTED */
 );
 
 var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mt-2 flex px-4 justify-between text-gray-600 dark:text-gray-400 capitalize"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" List sorting "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div @click=\"this.sort == 'asc.id' ? Sort('desc.id') : Sort('asc.id')\" class=\"w-20 flex items-center\">\r\n                            <span>id</span>\r\n                            <svg v-if=\"this.sort == 'asc.id'\" class=\"ml-1 h-5 w-5 fill-current text-red-500 dark:text-red-200\" viewBox=\"0 0 24 24\">\r\n                                <path d=\"M18 21l-4-4h3V7l2 0v10h3M 2 19v-2h10v2M2 13v-2h7v2M2 7V5h4v2H2z\"></path>\r\n                            </svg>\r\n                            <svg v-else-if=\"this.sort == 'desc.id'\" class=\"ml-1 h-5 w-5 fill-current text-red-500 dark:text-red-200\" viewBox=\"0 0 24 24\">\r\n                                <path d=\"M17 17V7h-3l4-4l4 4h-3v10h3M2 19v-2h10v2M2 13v-2h7v2M2 7V5h4v2H2z\"></path>\r\n\r\n                            </svg>\r\n                            <svg v-else class=\"ml-1 h-5 w-5 fill-current\" viewBox=\"0 0 24 24\">\r\n                                <path d=\"M18 21l-4-4h3V7h-3l4-4 4 4h-3v10h3M2 19v-2h10v2M2 13v-2h7v2M2 7V5h4v2H2z\"></path>\r\n                            </svg>\r\n                        </div> ")], -1
+}, null, -1
 /* HOISTED */
 );
 
@@ -28386,7 +28391,7 @@ var _hoisted_8 = {
 
 var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   "class": "border p-3"
-}, "id"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
+}, "Photo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   "class": "border p-3"
 }, "Nom"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   "class": "border p-3"
@@ -28543,7 +28548,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         , _hoisted_18)])])]);
       }), 128
       /* KEYED_FRAGMENT */
-      ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>{{ categories.to }} | {{ categories.total }}</p>\r\n            <Pagination class=\"mt-6\" :links=\"categories.links\" /> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <user-card v-for=\"user in this.UserList\" v-bind:key=\"user.id\" v-bind:user=\"user\"/>\r\n                    <p v-if=\"this.UserList.length == 0\" class=\"w-auto m-auto text-center\">No user to display</p> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_dialog_modal, {
+      ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>{{ categories.to }} | {{ categories.total }}</p>\n            <Pagination class=\"mt-6\" :links=\"categories.links\" /> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <user-card v-for=\"user in this.UserList\" v-bind:key=\"user.id\" v-bind:user=\"user\"/>\n                    <p v-if=\"this.UserList.length == 0\" class=\"w-auto m-auto text-center\">No user to display</p> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_jet_dialog_modal, {
         show: _this.ConfirmDeletion,
         onClose: _cache[4] || (_cache[4] = function ($event) {
           return _this.ConfirmDeletion = false;

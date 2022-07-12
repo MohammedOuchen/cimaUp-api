@@ -14,7 +14,7 @@
             <a href="#" class="play" onclick="toggle();"><img src="{{ asset('Images/episode/play.png') }}" alt="">Regarder bande d'annonce</a>
             <br>
             <br>
-            <a href="#" class="play" onclick="toggle();"><img src="{{ asset('Images/episode/play.png') }}" alt="">Regarder l'episode</a>
+            <a href="{{ route('subscription') }}" class="play" onclick="toggle();"><img src="{{ asset('Images/episode/play.png') }}" alt="">Regarder l'episode</a>
         </div>
     </div>
     <div class="trailer">

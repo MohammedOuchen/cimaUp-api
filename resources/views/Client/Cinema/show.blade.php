@@ -3,7 +3,9 @@
 @section('contentCinema')
 
     <div id="cimaUpLogo">
-        <img src="{{ asset('Images/cimaup.png') }}"/>
+        <a href="{{ route('home') }}">
+            <img src="{{ asset('Images/cimaup.png') }}"/>
+        </a>
     </div>
     <h1>Cinema {{ $cinema->name  }}</h1>
     <br>
@@ -12,6 +14,35 @@
     <hr>
     <br>
     <form id="mainform" class="needs-validation" novalidate>
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom01">Nom</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                <div class="valid-feedback">
+                    Cela semble bon!
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom02">Prénom</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                    <div class="valid-feedback">
+                        Cela semble bon!
+                    </div>
+            </div>
+        </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustomUsername">Email</label>
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <div class="invalid-feedback">
+                    Veuillez choisir un Email.
+                </div>
+            </div>
+
+
+        </div>
+
         <br>
         <div class="form-row">
             <div class="col-md-2 mb-3">

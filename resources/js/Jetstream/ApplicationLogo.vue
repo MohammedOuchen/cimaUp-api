@@ -1,5 +1,7 @@
 <template>
     <div>
-      <img src="images/cimaup.png"/>
+    <a :href="route('home')" >
+        <img src="images/cimaup.png"/>
+    </a>
     </div>
 </template>

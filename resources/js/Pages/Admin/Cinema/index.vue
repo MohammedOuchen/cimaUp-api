@@ -10,24 +10,6 @@
                     <div class="pb-2 flex items-center justify-between text-gray-600 dark:text-gray-400 border-b dark:border-gray-600">
                         <!-- Header -->
                         <div>
-                            <!-- <span v-if="route().params['roles'] != 'Mangaka'  && route().params['roles'] != 'Reader'" class="pr-5">
-                                <span class="text-red-500 dark:text-red-200">
-                                    {{this.users.length}}
-                                </span>
-                                Total Users
-                            </span>
-                            <span v-if="route().params['roles'] != 'Reader'" class="pr-5">
-                                <span class="text-red-500 dark:text-red-200">
-                                    {{this.users.filter(user => user.roles.find(role => role.name == "Mangaka")).length}}
-                                </span>
-                                Mangakas
-                            </span>
-                            <span v-if="route().params['roles'] != 'Mangaka'" class="pr-5">
-                                <span class="text-red-500 dark:text-red-200">
-                                    {{this.users.filter(user => user.roles.find(role => role.name == "Reader")).length}}
-                                </span>
-                                Readers
-                            </span> -->
                         </div>
                         <div>
                             <input type="search" v-model="search" placeholder="Search a user.." class="inline-flex items-center px-3 py-2 my-2 mx-1 rounded-md font-semibold text-xs"/>
@@ -37,25 +19,11 @@
                         </div>
                     </div>
                     <div class="mt-2 flex px-4 justify-between text-gray-600 dark:text-gray-400 capitalize">
-                        <!-- List sorting -->
-                        <!-- <div @click="this.sort == 'asc.id' ? Sort('desc.id') : Sort('asc.id')" class="w-20 flex items-center">
-                            <span>id</span>
-                            <svg v-if="this.sort == 'asc.id'" class="ml-1 h-5 w-5 fill-current text-red-500 dark:text-red-200" viewBox="0 0 24 24">
-                                <path d="M18 21l-4-4h3V7l2 0v10h3M 2 19v-2h10v2M2 13v-2h7v2M2 7V5h4v2H2z"></path>
-                            </svg>
-                            <svg v-else-if="this.sort == 'desc.id'" class="ml-1 h-5 w-5 fill-current text-red-500 dark:text-red-200" viewBox="0 0 24 24">
-                                <path d="M17 17V7h-3l4-4l4 4h-3v10h3M2 19v-2h10v2M2 13v-2h7v2M2 7V5h4v2H2z"></path>
-
-                            </svg>
-                            <svg v-else class="ml-1 h-5 w-5 fill-current" viewBox="0 0 24 24">
-                                <path d="M18 21l-4-4h3V7h-3l4-4 4 4h-3v10h3M2 19v-2h10v2M2 13v-2h7v2M2 7V5h4v2H2z"></path>
-                            </svg>
-                        </div> -->
                     </div>
                 <table class="table border w-full">
                 <thead>
                     <tr>
-                        <th class="border p-3">id</th>
+                        <th class="border p-3">Photo</th>
                         <th class="border p-3">Nom</th>
                         <th class="border p-3">active</th>
                         <th class="border p-3">Action</th>

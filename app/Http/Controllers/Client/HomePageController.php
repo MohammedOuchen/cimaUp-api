@@ -42,6 +42,12 @@ class HomePageController extends Controller
                             ->limit(6)
                             ->get();
 
+        $comedyEpisodes = Episode::where('categories','like', 'comedy')
+                            ->orderBy('evaluation')
+                            ->limit(6)
+                            ->get();
+
+        $comedyEpisodes->load([ 'media'])->append(['firstMediaUrl']);
         $bestEpisodes->load([ 'media'])->append(['firstMediaUrl']);
         $actionEpisodes->load([ 'media'])->append(['firstMediaUrl']);
         $drameEpisodes->load([ 'media'])->append(['firstMediaUrl']);
@@ -51,6 +57,7 @@ class HomePageController extends Controller
             'bestEpisodes' => $bestEpisodes,
             'actionEpisodes' => $actionEpisodes,
             'drameEpisodes' => $drameEpisodes,
+            'comedyEpisodes' => $comedyEpisodes,
             'search' => $search,
             'metaSearch' => $metaSearch
         ]);

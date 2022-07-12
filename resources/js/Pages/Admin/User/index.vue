@@ -94,11 +94,13 @@ export default {
             for(var i=0; i<this.users.length; i++) {
                 var matching = false;
                 for(var key in this.users[i]) {
+
                     if(key=="last_name"||key=="first_name"||key=="username"||key=="email"){
                         if(this.users[i][key] != null && this.users[i][key].indexOf(this.search.toLowerCase())!=-1) {
                             matching = true;
                         }
                     }
+
                 }
                 if(matching == true){
                     results.push(this.users[i]);
