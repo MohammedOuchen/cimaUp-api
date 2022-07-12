@@ -24,6 +24,11 @@
                                             <jet-input-error :message="this.formOffers.errors.title" class="mt-2" />
                                         </div>
                                         <div class="col-span-3 sm:col-span-3">
+                                            <label for="first_name" class="block text-sm font-medium text-gray-700">Prix (euros):</label>
+                                            <input type="number" v-model="this.formOffers.price_in_cent" v-bind:class="{ error: this.formOffers.errors.price_in_cent}" name="name" id="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                            <jet-input-error :message="this.formOffers.errors.price_in_cent" class="mt-2" />
+                                        </div>
+                                        <div class="col-span-3 sm:col-span-3">
                                             <label for="first_name" class="block text-sm font-medium text-gray-700">Jour :</label>
                                             <input type="date" v-model="this.formOffers.date" v-bind:class="{ error: this.formOffers.errors.date}" name="name" id="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                             <jet-input-error :message="this.formOffers.errors.date" class="mt-2" />
@@ -109,6 +114,7 @@ export default {
                     title: '',
                     date: '',
                     day: '',
+                    price_in_cent: '',
                     room_id: 0,
                     episode_id: 0,
                 }
@@ -130,6 +136,7 @@ export default {
                         title: this.offer.title,
                         day: this.offer.day,
                         date: this.offer.date,
+                        price_in_cent: this.offer.price_in_cent,
                         room_id: this.offer.room_id,
                         episode_id: this.offer.episode_id,
             }),

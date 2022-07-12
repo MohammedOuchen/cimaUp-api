@@ -26,6 +26,7 @@
                         <th class="border p-3">id</th>
                         <th class="border p-3">date de jours</th>
                         <th class="border p-3">time</th>
+                        <th class="border p-3">prix</th>
                         <th class="border p-3">Cinema</th>
                         <th class="border p-3">Episode</th>
                         <th class="border p-3">Action</th>
@@ -41,6 +42,9 @@
                         </td>
                         <td class="border p-3">
                             {{ offer.day }}
+                        </td>
+                        <td class="border p-3">
+                            {{ offer.price_in_cent }}€
                         </td>
                         <td class="border p-3">
                             {{ offer.room.cinema.name }}

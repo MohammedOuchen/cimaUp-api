@@ -18,6 +18,7 @@ class CreateOffersTable extends Migration
             $table->string('title');
             $table->date('date');
             $table->time('day');
+            $table->integer('price_in_cent');
             $table->foreignId('room_id')->constrained()->onDelete('cascade');
             $table->foreignId('episode_id')->constrained()->onDelete('cascade');
             $table->timestamps();
