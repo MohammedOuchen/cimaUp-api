@@ -21,8 +21,12 @@ use App\Http\Controllers\Client\HomePageController;
 
 Route::get('/', [HomePageController::class, 'index'])->name('home');
 
+
 Route::get('/show/{id}', [HomePageController::class, 'show'])->name('show.episode');
 
+Route::get('/cinema', function () {
+   return view ('Client.Cinema.show');
+});
 
 Route::get('/subscription', function () {
     return Inertia::render('Client/Subscription');

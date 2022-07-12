@@ -1,0 +1,41 @@
+
+h1, h3{
+    color: #ffffff;
+    margin-left: 130px;
+}
+
+h1{
+    margin-top: 220px;
+}
+
+label{
+    font-size: medium;
+    color: #ffffff;
+}
+
+#mainform{
+    margin-left: 150px;
+}
+
+hr{
+    border-top: 1px dashed #8f77f7;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#dropdownMenuButtonReservation, #dropdownMenuButtonPlaces{
+    background-color: #8f77f7;
+}
+
+#totalPrice{
+    font-size: 32px;
+}
+
+#ReservationBtn{
+    background-color: #532dfa;
+    border-color: #532dfa;
+    position: absolute;
+    left: 40%;
+    padding: 10px 80px;
+    font-size: 25px;
+}
