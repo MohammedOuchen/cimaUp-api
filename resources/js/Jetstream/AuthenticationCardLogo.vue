@@ -1,6 +1,6 @@
 <template>
     <Link :href="'/'">
-        <img src="images/cimaup.png"/>
+        <img src="Images/cimaup.png"/>
     </Link>
 </template>
 

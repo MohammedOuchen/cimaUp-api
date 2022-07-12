@@ -65,10 +65,16 @@ class User extends Authenticatable implements HasMedia
      */
     protected $appends = [
         'profile_photo_url',
+        'full_name',
     ];
 
+    /**
+     * Get the user's full name.
+     *
+     * @return string
+     * */
     public function getFullNameAttribute()
     {
-        return Str::of($this->first_name . ' ' . $this->last_name)->trim();
+        return "{$this->first_name} {$this->last_name}";
     }
 }

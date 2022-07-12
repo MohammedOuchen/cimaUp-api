@@ -10,8 +10,8 @@
                                 <path d="M16 34L3 46l13 12" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke="#202020" fill="none" data-name="layer1" stroke-linejoin="round"></path>
                             </svg>
                         </a>
-                        <span v-if="this.route().current('admin.users.create')">User creation</span>
-                        <span v-if="this.route().current('admin.users.edit')">{{this.users.username}}’s modification</span>
+                        <span v-if="this.route().current('admin.users.create')">Création d'utilisateur</span>
+                        <span v-if="this.route().current('admin.users.edit')">{{this.users.full_name}}</span>
                     </h2>
                     <div class="mt-5 md:mt-0 md:col-span-2">
                         <form @submit.prevent="submit">
@@ -19,30 +19,25 @@
                                 <div class="px-4 py-5 bg-white sm:p-6">
                                     <div class="grid grid-cols-6 gap-6">
                                         <div class="col-span-3 sm:col-span-3">
-                                            <label for="first_name" class="block text-sm font-medium text-gray-700">First name</label>
+                                            <label for="first_name" class="block text-sm font-medium text-gray-700">Prénom : </label>
                                             <input type="text" v-model="this.formUser.first_name" v-bind:class="{ error: this.formUser.errors.first_name}" name="first_name" id="first_name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                             <jet-input-error :message="this.formUser.errors.first_name" class="mt-2" />
                                         </div>
                                         <div class="col-span-3 sm:col-span-3">
-                                            <label for="last_name" class="block text-sm font-medium text-gray-700">Last name</label>
+                                            <label for="last_name" class="block text-sm font-medium text-gray-700">Nom :</label>
                                             <input type="text" v-model="this.formUser.last_name" v-bind:class="{ error: this.formUser.errors.last_name}" name="last_name" id="last_name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                             <jet-input-error :message="this.formUser.errors.last_name" class="mt-2" />
                                         </div>
 
                                         <div class="col-span-4 sm:col-span-4">
-                                            <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
-                                            <input type="text" v-model="this.formUser.username" v-bind:class="{ error: this.formUser.errors.username}" name="username" id="username" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                            <jet-input-error :message="this.formUser.errors.username" class="mt-2" />
+                                            <label for="username" class="block text-sm font-medium text-gray-700">Téléphone</label>
+                                            <input type="text" v-model="this.formUser.phone" v-bind:class="{ error: this.formUser.errors.phone}" name="username" id="username" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                            <jet-input-error :message="this.formUser.errors.phone" class="mt-2" />
                                         </div>
 
-                                        <div class="col-span-2 sm:col-span-2">
-                                            <label for="birthday" class="block text-sm font-medium text-gray-700">Birthday</label>
-                                            <input type="date" v-model="this.formUser.birthday" v-bind:class="{ error: this.formUser.errors.birthday}" name="birthday" id="birthday" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-                                            <jet-input-error :message="this.formUser.errors.birthday" class="mt-2" />
-                                        </div>
 
                                         <div class="col-span-4 sm:col-span-4">
-                                            <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                                             <input type="email" v-model="this.formUser.email" v-bind:class="{ error: this.formUser.errors.email}" name="email" id="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                             <jet-input-error :message="this.formUser.errors.email" class="mt-2" />
                                         </div>
@@ -99,8 +94,7 @@ export default {
                 return {
                     first_name: '',
                     last_name: '',
-                    username: '',
-                    birthday: '',
+                    phone: '',
                     roles: [],
                     email: '',
                     password: '',
@@ -121,8 +115,7 @@ export default {
         formUser: this.$inertia.form({
                 first_name: this.users.first_name,
                 last_name: this.users.last_name,
-                username: this.users.username,
-                birthday: moment(this.users.birthday).format('YYYY-MM-DD'),
+                phone: this.users.phone,
                 roles: this.users.roles,
                 email: this.users.email,
                 password: this.users.password,
@@ -140,14 +133,14 @@ export default {
             return moment(date).locale("fr").format("Do MMM YYYY");
         },
         submit() {
-            if(this.route().current('admin.users.create')){
+            if(this.route().current('admin.user.create')){
                 var tempBirthday = this.formUser.birthday
                 this.formUser.birthday = new Date(this.formUser.birthday)
                 if (!isNaN(this.formUser.birthday)){
                     this.formUser.birthday = tempBirthday
 
                 }
-                this.formUser.post(this.route('admin.users.store'), {
+                this.formUser.post(this.route('admin.user.store'), {
                     preserveScroll: true,
                     onError: () => {
                         this.formUser.birthday = tempBirthday
@@ -163,14 +156,14 @@ export default {
                     }
                 })
             }
-            else if(this.route().current('admin.users.edit')){
+            else if(this.route().current('admin.user.edit')){
                 var tempBirthday = this.formUser.birthday
                 this.formUser.birthday = new Date(this.formUser.birthday)
                 if (!isNaN(this.formUser.birthday)){
                     this.formUser.birthday = tempBirthday
 
                 }
-                this.formUser.put(this.route('admin.users.update', {id: this.users.id}), {
+                this.formUser.put(this.route('admin.user.update', {id: this.users.id}), {
                     preserveScroll: true,
                     onError: () => {
                         this.formUser.birthday = tempBirthday

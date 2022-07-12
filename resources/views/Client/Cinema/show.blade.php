@@ -3,46 +3,16 @@
 @section('contentCinema')
 
     <div id="cimaUpLogo">
-        <img src="images/cimaup.png"/>
+        <img src="{{ asset('Images/cimaup.png') }}"/>
     </div>
-    <h1>Cinema Parado</h1>
+    <h1>Cinema {{ $cinema->name  }}</h1>
     <br>
-    <h3>824 avenue du Lys La Cartonnerie - 77190 Dammarie-lès-Lys</h3>
+    <h3>{{ $cinema->address.' -- '.$cinema->additional_address.' '.$cinema->post_code.' , '.$cinema->city.' , '.$cinema->country }}</h3>
     <br>
     <hr>
     <br>
     <form id="mainform" class="needs-validation" novalidate>
-        <div class="form-row">
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom01">Nom</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
-                <div class="valid-feedback">
-                    Cela semble bon!
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationCustom02">Prénom</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
-                    <div class="valid-feedback">
-                        Cela semble bon!
-                    </div>
-            </div>
-        </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="validationCustomUsername">Email</label>
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                <div class="invalid-feedback">
-                    Veuillez choisir un Email.
-                </div>
-            </div>
-
-            
-        </div>
-
         <br>
-
         <div class="form-row">
             <div class="col-md-2 mb-3">
                 <div class="dropdown">
@@ -78,7 +48,7 @@
             <label id="totalPrice"> Prix total: 24.99 €</label>
             </div>
         </div>
-        
+
         <div class="form-group">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>

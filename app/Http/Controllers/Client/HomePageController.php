@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
+use App\Models\Cinema;
 use Illuminate\Http\Request;
 use App\Models\Episode;
 use Inertia\Inertia;
@@ -60,8 +61,25 @@ class HomePageController extends Controller
         $episode = Episode::findorFail($id);
         $episode->load([ 'media'])->append(['firstMediaUrl']);
 
+        $cinemas = Cinema::whereHas('rooms.offers', function($q) use ($episode){
+                return $q->where('episode_id', $episode->id);
+        })->get();
+        $cinemas->load([ 'media'])->append(['firstMediaUrl']);
+
+
         return view('Client.Episode.show',[
             'episode' =>$episode,
+            'cinemas' => $cinemas,
+        ]);
+    }
+
+    public function showCinema($cinema_id, $episode_id)
+    {
+        $cinema = Cinema::findorFail($cinema_id);
+        $episode = Episode::findorFail($episode_id);
+        return view('Client.Cinema.show', [
+            'cinema' => $cinema,
+            'episode' => $episode,
         ]);
     }
 }

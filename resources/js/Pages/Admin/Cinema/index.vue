@@ -173,7 +173,7 @@ export default {
     },
     mounted()
     {
-        console.log("thhhhh", this.cinemas);
+
     },
 
 }

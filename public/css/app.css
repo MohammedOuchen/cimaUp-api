@@ -1108,17 +1108,6 @@ select {
 .prose > :last-child {
 	margin-bottom: 0;
 }
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	border-width: 0;
-}
 .fixed {
 	position: fixed;
 }
@@ -1164,9 +1153,6 @@ select {
 .col-span-2 {
 	grid-column: span 2 / span 2;
 }
-.col-auto {
-	grid-column: auto;
-}
 .float-left {
 	float: left;
 }
@@ -1196,10 +1182,6 @@ select {
 .my-4 {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-}
-.my-1 {
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
 }
 .ml-3 {
 	margin-left: 0.75rem;
@@ -1270,14 +1252,14 @@ select {
 .mb-4 {
 	margin-bottom: 1rem;
 }
+.-mt-px {
+	margin-top: -1px;
+}
 .mb-1 {
 	margin-bottom: 0.25rem;
 }
 .mb-5 {
 	margin-bottom: 1.25rem;
-}
-.-mt-px {
-	margin-top: -1px;
 }
 .ml-10 {
 	margin-left: 2.5rem;

@@ -23,38 +23,44 @@
         <img src="{{ asset('Images/episode/close.png') }}" alt="" class="close" onclick="toggle();">
     </div>
 
-    <!-- Cinemas section-->
-    <section id="Cinemas">
+ @if (count($cinemas))
+    <!-- top rated movies section start -->
+    <section id="TopRatedMovies">
         <div class="Container">
             <h2>Actuellement en salles</h2>
             <div class="row Movies">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="row">
-                            <div class="col-6"><a href="Movies/Venom2/Venom2.html"><img
-                                        src="images/CinemaParado.png"></a></div>
-                            <div class="col-6"><a href="Movies/Morbius/Morbius.html"><img
-                                        src="images/CinemaParado.png"></a></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="row">
-                            <div class="col-6"><a href="Movies/TheBatman/TheBatman.html"><img
-                                        src="Images/CinemaParado.png"></a></div>
-                            <div class="col-6"><a href="Movies/WonderWoman1984/WonderWoman1984.html"><img
-                                        src="Images/CinemaParado.png"></a></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="row">
-                            <div class="col-6"><a href="Movies/PeterRabbit2TheRunaway/PeterRabbit2TheRunaway.html"><img
-                                        src="Images/CinemaParado.png"></a></div>
-                            <div class="col-6"><a href="Movies/JungleCruise/JungleCruise.html"><img
-                                        src="Images/CinemaParado.png"></a></div>
-                        </div>
-                    </div>
-                </div>
+                @php
+                    $count = 0;
+                @endphp
+                    @foreach ($cinemas as $cinema)
+                            @if ($count % 2 == 0)
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <a href="{{ route('cinema.show',['cinema_id' => $cinema->id , 'episode_id' => $episode->id ] ) }}">
+                                                <img src="{{ $cinema->getFirstMediaUrl('images_cinemas') }}">
+                                            </a>
+                                        </div>
+                            @else
+
+                                    <div class="col-6">
+                                        <a href="{{ route('cinema.show',['cinema_id' => $cinema->id , 'episode_id' => $episode->id ] ) }}">
+                                            <img src="{{ $cinema->getFirstMediaUrl('images_cinemas') }}">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+                        @php
+                            $count++;
+                        @endphp
+
+                    @endforeach
+            </div>
         </div>
     </section>
+    <!-- top rated movies section end -->
+    @endif
 
     <!-- Comment and Avis section-->
     <section id="Cinemas">
