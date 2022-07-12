@@ -8,9 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Offer extends Model
 {
     use HasFactory;
-
-
-        /**
+    /**
      * The attributes that are mass assignable.
      *
      * @var string[]
@@ -19,6 +17,7 @@ class Offer extends Model
         'title',
         'date',
         'day',
+        'price_in_cent',
         'room_id',
         'episode_id',
     ];

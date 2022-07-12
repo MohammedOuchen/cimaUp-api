@@ -18,7 +18,7 @@ class CinemaController extends Controller
     public function index()
     {
         $cinemas = Cinema::all();
-
+        $cinemas->load([ 'media'])->append(['firstMediaUrl']);
         return Inertia::render('Admin/Cinema/index',[
             'cinemas' => $cinemas
         ]);
@@ -58,6 +58,8 @@ class CinemaController extends Controller
             'active' => $request['active'],
             'user_id' => $request['user_id'],
         ]);
+
+        $cinema->addMediaFromRequest('image')->toMediaCollection('images_cinemas');
 
        return redirect()->route('admin.cinema.index');
     }
