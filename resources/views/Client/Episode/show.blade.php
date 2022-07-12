@@ -23,38 +23,62 @@
         <img src="{{ asset('Images/episode/close.png') }}" alt="" class="close" onclick="toggle();">
     </div>
 
-    <!-- top rated movies section start -->
-<section id="Cinemas">
-    <div class="Container">
-        <h2>Actuellement en salles</h2>
-        <div class="row Movies">
-                <div class="col-lg-4 col-md-6">
-                    <div class="row">
-                        <div class="col-6"><a href="Movies/Venom2/Venom2.html"><img
-                                    src="images/CinemaParado.png"></a></div>
-                        <div class="col-6"><a href="Movies/Morbius/Morbius.html"><img
-                                    src="images/CinemaParado.png"></a></div>
+    <!-- Cinemas section-->
+    <section id="Cinemas">
+        <div class="Container">
+            <h2>Actuellement en salles</h2>
+            <div class="row Movies">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-6"><a href="Movies/Venom2/Venom2.html"><img
+                                        src="images/CinemaParado.png"></a></div>
+                            <div class="col-6"><a href="Movies/Morbius/Morbius.html"><img
+                                        src="images/CinemaParado.png"></a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-6"><a href="Movies/TheBatman/TheBatman.html"><img
+                                        src="Images/CinemaParado.png"></a></div>
+                            <div class="col-6"><a href="Movies/WonderWoman1984/WonderWoman1984.html"><img
+                                        src="Images/CinemaParado.png"></a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-6"><a href="Movies/PeterRabbit2TheRunaway/PeterRabbit2TheRunaway.html"><img
+                                        src="Images/CinemaParado.png"></a></div>
+                            <div class="col-6"><a href="Movies/JungleCruise/JungleCruise.html"><img
+                                        src="Images/CinemaParado.png"></a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="row">
-                        <div class="col-6"><a href="Movies/TheBatman/TheBatman.html"><img
-                                    src="Images/CinemaParado.png"></a></div>
-                        <div class="col-6"><a href="Movies/WonderWoman1984/WonderWoman1984.html"><img
-                                    src="Images/CinemaParado.png"></a></div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="row">
-                        <div class="col-6"><a href="Movies/PeterRabbit2TheRunaway/PeterRabbit2TheRunaway.html"><img
-                                    src="Images/CinemaParado.png"></a></div>
-                        <div class="col-6"><a href="Movies/JungleCruise/JungleCruise.html"><img
-                                    src="Images/CinemaParado.png"></a></div>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <!-- Comment and Avis section-->
+    <section id="Cinemas">
+        <div class="Container">
+            <h2>Donnez votre avis </h2>
+            <div class="rating"><!--
+                --><a href="#5" title="Give 5 stars">☆</a><!--
+                --><a href="#4" title="Give 4 stars">☆</a><!--
+                --><a href="#3" title="Give 3 stars">☆</a><!--
+                --><a href="#2" title="Give 2 stars">☆</a><!--
+                --><a href="#1" title="Give 1 star">☆</a>
             </div>
-    </div>
-</section>
+
+            <div class="form-group">
+                <label id="commentLabel" for="CommentSection">Commentaire</label>
+                <textarea class="form-control" id="CommentSection" rows="3"></textarea>
+            </div>
+            <button id="SendComment" type="submit" class="btn btn-primary mb-2">Envoyer</button>
+            <br>
+            <br>
+            <div>
+            </div>
+        </div>
+    </section>
 
     <script>
         function toggle(){

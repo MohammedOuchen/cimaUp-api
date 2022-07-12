@@ -134,3 +134,47 @@ header .toggle{
         outline: none;
     }
 }
+
+/* Rating styles*/
+.rating {
+width: 226px;
+font-size: 45px;
+overflow:hidden;
+}
+.rating a {
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+}
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a		{
+    color: orange;
+    cursor: pointer;
+}
+.rating2 {
+    direction: rtl;
+}
+.rating2 a {
+    float:none
+}
+
+#commentLabel{
+    font-size: large;
+    color: #ffffff;
+}
+
+#SendComment{
+    background-color: #532dfa;
+    border-color: #532dfa;
+    position: absolute;
+    left: 90%;
+    padding: 5px 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
