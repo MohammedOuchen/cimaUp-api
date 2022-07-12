@@ -18,6 +18,7 @@ class Episode extends Model implements HasMedia
      * @var string[]
      */
     protected $fillable = [
+        'link',
         'title',
         'type',
         'subtitle',

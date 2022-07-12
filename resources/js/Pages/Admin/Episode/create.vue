@@ -56,6 +56,12 @@
                                         </div>
 
                                         <div class="col-span-3 sm:col-span-3">
+                                            <label for="first_name" class="block text-sm font-medium text-gray-700">Lien :</label>
+                                            <input type="text" v-model="this.formEpisode.link" v-bind:class="{ error: this.formEpisode.errors.link}" name="link" id="link" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                            <jet-input-error :message="this.formEpisode.errors.link" class="mt-2" />
+                                        </div>
+
+                                        <div class="col-span-3 sm:col-span-3">
                                             <label for="first_name" class="block text-sm font-medium text-gray-700">Durée :</label>
                                             <input type="time" v-model="this.formEpisode.duration" v-bind:class="{ error: this.formEpisode.errors.duration}" name="name" id="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                                             <jet-input-error :message="this.formEpisode.errors.duration" class="mt-2" />
@@ -149,6 +155,7 @@ export default {
                     subtitle: '',
                     description: '',
                     categories: '',
+                    link: '',
                     duration: 0,
                     evaluation: 0,
                     serial_number: 0,
@@ -174,6 +181,7 @@ export default {
                     description: this.episode.description,
                     categories: this.episode.categories,
                     duration: this.episode.duration,
+                    link: this.episode.link,
                     evaluation: this.episode.evaluation,
                     serial_number: this.episode.serial_number,
                     season_number: this.episode.season_number,

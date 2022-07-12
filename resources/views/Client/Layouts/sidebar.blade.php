@@ -8,6 +8,16 @@
         <li class="sidebar-brand">
             <a class="js-scroll-trigger" href="#page-top">CIMAUP</a>
         </li>
+        @guest
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="{{ route('register') }}">S'inscrire</a>
+        </li>
+        @endguest
+        @auth
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="{{ route('profile.show') }}">Profile</a>
+        </li>
+        @endauth
         <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#UpcomingMovies">Tendances actuelles</a>
         </li>

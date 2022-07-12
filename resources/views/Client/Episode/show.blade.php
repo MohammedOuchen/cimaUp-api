@@ -2,27 +2,25 @@
 
 @section('contentEpisode')
     <header>
-        <a href="#" class="logo"><img src="logo.png" alt=""></a>
-    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+        <a href="{{ route('home') }}" class="logo"><img src="{{ asset('Images/cimaup.png') }}" alt=""></a>
+    <div class="toggle"><img src="{{ asset('Images/episode/toggle.png') }}" alt=""></div>
     </header>
-    <div class="banner" style="background-image: url(/images/bg.jpg);">
+    <div class="banner" style="background-image: url({{ $episode->getFirstMediaUrl('images_episodes') }});">
         <div class="content">
-            <h2><span>The Batman</span></h2>
+            <h2><span>{{ $episode->title }}</span></h2>
             <p>
-                The Batman is an upcoming American superhero film based on the DC Comics character of the same name. 
-                Produced by DC Films and distributed by Warner Bros. Pictures, it is a reboot of the Batman film franchise. 
-                The film is directed by Matt Reeves, who wrote the screenplay with Peter Craig. It stars Robert Pattinson as 
-                Bruce Wayne / Batman, with Zoë Kravitz, Paul Dano, Jeffrey Wright, John Turturro, Peter Sarsgaard, Barry Keoghan, 
-                Jayme Lawson, Andy Serkis, and Colin Farrell rounding out the ensemble cast. The Batman is set during Batman's 
-                second year of fighting crime and follows him as he explores Gotham City's corruption and faces the Riddler, 
-                a riddle-obsessed serial killer.....
+             {{ $episode->description }}
             </p>
-            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+            <a href="#" class="play" onclick="toggle();"><img src="{{ asset('Images/episode/play.png') }}" alt="">Regarder bande d'annonce</a>
+            <br>
+            <br>
+            <a href="#" class="play" onclick="toggle();"><img src="{{ asset('Images/episode/play.png') }}" alt="">Regarder l'episode</a>
         </div>
     </div>
     <div class="trailer">
-        <video src="TheBatman.mp4" controls="true"></video>
-        <img src="close.png" alt="" class="close" onclick="toggle();">
+        <iframe width="1500" height="900" src="{{ $episode->link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </iframe>
+        <img src="{{ asset('Images/episode/close.png') }}" alt="" class="close" onclick="toggle();">
     </div>
 
     <!-- top rated movies section start -->
@@ -60,12 +58,12 @@
 
     <script>
         function toggle(){
-        var trailer=document.querySelector('.trailer');
-        let video=document.querySelector('.video');
-        trailer.classList.toggle('active');
-        video.currentTime = 0;
-        video.pause();
-    }
+            var trailer=document.querySelector('.trailer');
+            let video=document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>

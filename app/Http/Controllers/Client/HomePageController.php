@@ -57,6 +57,11 @@ class HomePageController extends Controller
 
     public function show($id)
     {
-        return view('Client.Episode.show');
+        $episode = Episode::findorFail($id);
+        $episode->load([ 'media'])->append(['firstMediaUrl']);
+
+        return view('Client.Episode.show',[
+            'episode' =>$episode,
+        ]);
     }
 }

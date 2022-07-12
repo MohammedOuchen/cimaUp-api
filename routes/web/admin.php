@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\CinemaController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EpisodeController;
+use App\Http\Controllers\Admin\OfferController;
 use App\Http\Controllers\Admin\Participant\UserController as ParticipantUserController;
 use App\Http\Controllers\Admin\RoomController;
 use App\Http\Controllers\Admin\UserController;
@@ -29,4 +30,7 @@ Route::resource('participant' , ParticipantUserController::class);
 
 //episode
 Route::resource('episode' , EpisodeController::class);
+
+//offer
+Route::resource('offer' , OfferController::class);
 

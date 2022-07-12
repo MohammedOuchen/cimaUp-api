@@ -1159,6 +1159,12 @@ select {
 .m-auto {
 	margin: auto;
 }
+.m-2 {
+	margin: 0.5rem;
+}
+.m-5 {
+	margin: 1.25rem;
+}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
@@ -1252,14 +1258,14 @@ select {
 .mb-4 {
 	margin-bottom: 1rem;
 }
+.-mt-px {
+	margin-top: -1px;
+}
 .mb-1 {
 	margin-bottom: 0.25rem;
 }
 .mb-5 {
 	margin-bottom: 1.25rem;
-}
-.-mt-px {
-	margin-top: -1px;
 }
 .ml-10 {
 	margin-left: 2.5rem;

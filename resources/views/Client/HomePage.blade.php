@@ -50,14 +50,14 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="row">
                                     <div class="col-6">
-                                        <a href="Movies/Venom2/Venom2.html">
+                                        <a href="{{ route('show.episode', $episode->id)}}">
                                             <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
                                         </a>
                                     </div>
                         @else
 
                                 <div class="col-6">
-                                    <a href="Movies/Morbius/Morbius.html">
+                                    <a href="{{ route('show.episode', $episode->id)}}">
                                         <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
                                     </a>
                                 </div>
@@ -99,14 +99,14 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="row">
                                     <div class="col-6">
-                                        <a href="Movies/Venom2/Venom2.html">
+                                        <a href="{{ route('show.episode', $episode->id)}}">
                                             <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
                                         </a>
                                     </div>
                         @else
 
                                 <div class="col-6">
-                                    <a href="Movies/Morbius/Morbius.html">
+                                    <a href="{{ route('show.episode', $episode->id)}}">
                                         <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
                                     </a>
                                 </div>
@@ -137,14 +137,14 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="row">
                                     <div class="col-6">
-                                        <a href="Movies/Venom2/Venom2.html">
+                                        <a href="{{ route('show.episode', $episode->id) }}">
                                             <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
                                         </a>
                                     </div>
                         @else
 
                                 <div class="col-6">
-                                    <a href="Movies/Morbius/Morbius.html">
+                                    <a href="{{ route('show.episode', $episode->id) }}">
                                         <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
                                     </a>
                                 </div>
@@ -177,19 +177,19 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="row">
                                     <div class="col-6">
-                                        <a href="Movies/Venom2/Venom2.html">
+                                        <a href="{{ route('show.episode', $episode->id) }}">
                                             <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
                                         </a>
                                     </div>
                         @else
 
-                                <div class="col-6">
-                                    <a href="Movies/Morbius/Morbius.html">
-                                        <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
-                                    </a>
+                                    <div class="col-6">
+                                        <a href="{{ route('show.episode', $episode->id) }}">
+                                            <img src="{{ $episode->getFirstMediaUrl('images_episodes') }}">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     @endif
                     @php
                         $count++;
@@ -203,7 +203,7 @@
 @endif
 
 
-<!-- latest movies section start -->
+{{-- <!-- latest movies section start -->
 <section id="LatestMovies">
     <div class="Container">
         <h2>Latest Movies</h2>
@@ -354,7 +354,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 @endsection
