@@ -64,7 +64,7 @@
                 <tbody>
                     <tr v-for="cinema in this.cinemas" :key="cinema.id">
                         <td class="border p-3">
-                             {{ cinema.id }}
+                             <img :src="cinema.firstMediaUrl" width="150" height="150" />
                         </td>
                         <td class="border p-3">
                             {{ cinema.name }}

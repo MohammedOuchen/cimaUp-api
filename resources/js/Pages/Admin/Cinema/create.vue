@@ -38,7 +38,7 @@
                                             <jet-input-error :message="this.formCinema.errors.active" class="mt-2" />
                                         </div>
 
-                                        <div class="col-span-4 sm:col-span-4">
+                                        <div class="col-span-4 sm:col-span-3">
                                             <label for="roles" class="block text-sm font-medium text-gray-700">Owner</label>
 
                                             <multiselect
@@ -57,6 +57,18 @@
 
                                             <jet-input-error :message="this.formCinema.errors.user_id" class="mt-2" />
                                         </div>
+
+                                        <div class="col-span-3 sm:col-span-3">
+                                            <label for="first_name" class="block text-sm font-medium text-gray-700">Photo :</label>
+                                            <input
+                                                type="file"
+                                                ref="photo"
+                                                name="name"
+                                                id="name"
+                                                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                            >
+                                        </div>
+
 
                                         <div class="col-span-4 sm:col-span-3">
                                             <label for="username" class="block text-sm font-medium text-gray-700">Adresse</label>
@@ -184,6 +196,7 @@ export default {
                         country: this.cinema.country,
                         active: this.cinema.active,
                         user_id: this.cinema.user_id,
+                        image: null,
                 })
         }
     },
@@ -198,8 +211,9 @@ export default {
         submit() {
             if(this.route().current('admin.cinema.create')){
 
-                console.log(this.formCinema);
-
+                if (this.$refs.photo) {
+                    this.formCinema.image = this.$refs.photo.files[0];
+                }
                 this.formCinema.post(this.route('admin.cinema.store'), {
                     preserveScroll: true,
                     onError: () => {

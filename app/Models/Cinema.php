@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
-class Cinema extends Model
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+class Cinema extends Model implements HasMedia
 {
     use HasFactory;
+    use InteractsWithMedia;
 
      /**
      * The attributes that are mass assignable.
@@ -29,5 +31,11 @@ class Cinema extends Model
     public function rooms()
     {
         return $this->hasMany(Room::class);
+    }
+
+
+    public function getFirstMediaUrlAttribute()
+    {
+        return $this->getFirstMediaUrl('images_cinemas');
     }
 }
