@@ -95,7 +95,7 @@ class HomePageController extends Controller
     public function contact(Request $request)
     {
 
-        Mail::to($request['email'])->send(new ContactClient($request['fisrt_name'], $request['last-name'], $request['email']));
+        Mail::to($request['email'])->send(new ContactClient($request['first_name'], $request['last_name'], $request['email'], $request['message']));
         return back();
     }
 }

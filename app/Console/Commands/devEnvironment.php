@@ -15,7 +15,7 @@ class devEnvironment extends Command
      *
      * @var string
      */
-    protected $signature = 'dev {--Client=20} {--Owner=20}';
+    protected $signature = 'dev {--Client=100} {--Owner=100}';
 
     /**
      * The console command description.
