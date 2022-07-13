@@ -3,7 +3,7 @@
 @section('contentEpisode')
     <header>
         <a href="{{ route('home') }}" class="logo"><img src="{{ asset('Images/cimaup.png') }}" alt=""></a>
-    <div class="toggle"><img src="{{ asset('Images/episode/toggle.png') }}" alt=""></div>
+
     </header>
     <div class="banner" style="background-image: url({{ $episode->getFirstMediaUrl('images_episodes') }});">
         <div class="content">

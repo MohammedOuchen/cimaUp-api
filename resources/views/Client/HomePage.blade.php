@@ -18,10 +18,7 @@
         <a id="button1" class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow.html">Regarde la bande-annonce</a>
         <br>
         <br>
-        <a id="button2" class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow.html">Réserver un billet cinéma</a>
-        <br>
-        <br>
-        <a id="button3" class="btn btn-primary btn-xl js-scroll-trigger" href="Movies/BlackWidow.html">S'abonner à CimaUp</a>
+        <a id="button3" class="btn btn-primary btn-xl js-scroll-trigger" href="{{ route('subscription') }}">S'abonner à CimaUp</a>
     </div>
     <div class="overlay"></div>
 </header>

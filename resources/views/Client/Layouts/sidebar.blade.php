@@ -18,6 +18,11 @@
             <a class="js-scroll-trigger" href="{{ route('profile.show') }}">Profile</a>
         </li>
         @endauth
+
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="{{ route('contact') }}">Nous contacter</a>
+        </li>
+
         <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#UpcomingMovies">Tendances actuelles</a>
         </li>

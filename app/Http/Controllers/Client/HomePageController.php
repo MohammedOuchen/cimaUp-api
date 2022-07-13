@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ContactClient;
 use App\Models\Cinema;
 use Illuminate\Http\Request;
 use App\Models\Episode;
+use Illuminate\Support\Facades\Mail;
 use Inertia\Inertia;
 
 class HomePageController extends Controller
@@ -88,5 +90,12 @@ class HomePageController extends Controller
             'cinema' => $cinema,
             'episode' => $episode,
         ]);
+    }
+
+    public function contact(Request $request)
+    {
+
+        Mail::to($request['email'])->send(new ContactClient($request['fisrt_name'], $request['last-name'], $request['email']));
+        return back();
     }
 }

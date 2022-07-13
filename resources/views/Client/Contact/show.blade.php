@@ -3,7 +3,9 @@
 @section('contentContact')
 
     <div id="cimaUpLogo">
-        <img src="images/cimaup.png"/>
+        <a href="{{ route('home') }}">
+            <img src="images/cimaup.png"/>
+        </a>
     </div>
     <h1>Nous Contacter : </h1>
     <br>
@@ -11,18 +13,20 @@
     <br>
     <hr>
     <br>
-    <form id="mainform" class="needs-validation" novalidate>
+    <form id="mainform" class="needs-validation" action="{{ route('contact') }}" method="POST" novalidate>
+        @csrf
+
         <div class="form-row">
             <div class="col-md-3 mb-3">
                 <label for="validationCustom01">Nom</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First name" name="fisrt_name" value="Mark" required>
                 <div class="valid-feedback">
                     Cela semble bon!
                 </div>
             </div>
             <div class="col-md-3 mb-3">
                 <label for="validationCustom02">Prénom</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" name="last_name" value="Otto" required>
                     <div class="valid-feedback">
                         Cela semble bon!
                     </div>
@@ -32,13 +36,13 @@
         <div class="form-row">
             <div class="col-md-6 mb-3">
                 <label for="validationCustomUsername">Email</label>
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
                 <div class="invalid-feedback">
                     Veuillez choisir un Email.
                 </div>
             </div>
 
-            
+
         </div>
 
         <br>
@@ -46,10 +50,10 @@
         <div class="form-row">
             <div class="col-md-6 mb-3">
                 <label id="messageLabel" for="MessageSection">Message : </label>
-                <textarea class="form-control" id="MessageSection" rows="3"></textarea>
+                <textarea name="message" class="form-control" id="MessageSection" rows="3"></textarea>
             </div>
         </div>
-        
+
         <div class="form-group">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>

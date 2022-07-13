@@ -29,7 +29,9 @@ Route::get('/cinema/{cinema_id}/{episode_id}',[HomePageController::class, 'showC
 
 Route::get('/contact', function () {
    return view ('Client.Contact.show');
-});
+})->name('show.contact');
+
+Route::post('/contact', [HomePageController::class, 'contact'])->name('contact');
 
 Route::get('/subscription', function () {
     return Inertia::render('Client/Subscription');
