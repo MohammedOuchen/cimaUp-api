@@ -1,4 +1,8 @@
-# Novabooking
+# CimaUp
+```
+Cimaup is a platform for streaming and reservation of ticket of cinema
+
+```
 
 ## installation
 
