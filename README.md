@@ -21,23 +21,15 @@ don't forget to make your `.env` file with your app key and your database
 php artisan db:reset --seed
 ```
 
-## Add role to existing user
-
-- Run next command, with user's email or id, and with role name or id :
-
-``` shell
-php artisan addRole {roleNameOrId} {userEmailOrId}
-```
-
 ## Set up dev environment
 
 ***the parameters are not required***, automatically run `artisan optimize`, `artisan migrate:fresh --seed`, and generate multiple users for testing :
 
 ``` shell
-php artisan dev
+php artisan dev {--Client=100} {--Owner=100}
 ```
 
 ## default super admin
 
-**email** : `super.admin@novabooking.com`
+**email** : `super.admin@cima-up.com`
 **password** : `Password-1234`
