@@ -33,6 +33,8 @@ php artisan db:reset --seed
 php artisan dev {--Client=100} {--Owner=100}
 ```
 
+![la commande dev](/public/images/commande-dev-cimaup.png)
+
 ## default super admin
 
 **email** : `super.admin@cima-up.com`
